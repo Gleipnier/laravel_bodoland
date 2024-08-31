@@ -10,6 +10,15 @@
                <div class="call_text"><img src="images/mail-icon.png"></div>
                <div class="call_text"><a href="#">demo@gmail.com</a></div>
             </div> -->
+            
+         </div>
+      </div>
+      <!-- footer section end -->
+      <!-- copyright section start -->
+      <div class="copyright_section">
+         
+         <div class="container">
+            <p class="copyright_text">Content Ownership Directorate of Sports & Youth Welfare, Govt. of BTR. </p>
             <div class="social_icon">
                <ul>
                   <li><a href="#"><img src="images/fb-icon.png"></a></li>
@@ -18,14 +27,7 @@
                   <li><a href="#"><img src="images/instagram-icon.png"></a></li>
                </ul>
             </div>
-         </div>
-      </div>
-      <!-- footer section end -->
-      <!-- copyright section start -->
-      <div class="copyright_section">
-         <div class="container">
-            <p class="copyright_text">Content Ownership Directorate of Sports & Youth Welfare, Govt. of BTR. </p>
-             <!-- <a href="https://html.design">Free html  Templates</a> -->
+             
          </div>
       </div>
       <!-- copyright section end -->

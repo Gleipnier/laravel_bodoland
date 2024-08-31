@@ -2,34 +2,29 @@
          <div class="container">
         
          <div class="banner_section layout_padding">
-    <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel" >
-        <div class="carousel-inner">
-            <!-- First Slide -->
-            <div class="carousel-item active">
-                <div class="container">
-                    <img src="images/financeassist.png" class="d-block w-100" alt="">
-                </div>
-            </div>
-            <!-- Second Slide -->
-            <div class="carousel-item">
-                <div class="container">
-                    <img src="images/sportsacademy.png" class="d-block w-100" alt="">
-                </div>
-            </div>
-            <!-- Third Slide -->
-            <div class="carousel-item">
-                <div class="container">
-                    <img src="images/kheloindia.png" class="d-block w-100" alt="">
-                </div>
-            </div>
-            <!-- Fourth Slide -->
-            <div class="carousel-item">
-                <div class="container">
-                    <img src="images/statelevelcommittee.png" class="d-block w-100" alt="">
-                </div>
-            </div>
-        </div>
-    </div>
+            <div class="container">
+               <div class="card">
+                   <div class="card-image">
+                       <img src="images/financeasisst.png" alt="Finance">
+                   </div>
+               </div>
+               <div class="card">
+                   <div class="card-image">
+                       <img src="images/sportsacademy.png" alt="Sport Academy">
+                   </div>
+               </div>
+               <div class="card">
+                   <div class="card-image">
+                       <img src="images/kheloindia.png" alt="KheloIndia">
+                   </div>
+               </div>
+               <div class="card">
+                   <div class="card-image">
+                       <img src="images/statelevelcommittee.png" alt="StateCommittee">
+                   </div>
+               </div>
+           </div>
+    
 </div>
             <h1 class="client_taital">Recent Notifications</h1>
             <div class="client_section_2">
@@ -110,6 +105,8 @@
                      </div>
                   </div>
                </div>
+               
             </div>
+            
          </div>
       </div>
