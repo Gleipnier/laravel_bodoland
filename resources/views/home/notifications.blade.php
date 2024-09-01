@@ -2,7 +2,32 @@
          <div class="container">
         
          <div class="banner_section layout_padding">
-            <div class="container">
+
+            <div class="game-event d-flex justify-content-center align-items-center flex-wrap">
+               <div class="event">
+                  <img src="images/financeasisst.png" alt="Finance">
+                  <h3></h3>
+                  <a class="link mt-2" href="/"><h3>Financial Assistance</h3></a>
+               </div>
+               <div class="event">
+                  <img src="images/sportsacademy.png" alt="Sports Academy">
+                  <h3></h3>
+                  <a class="link mt-2" href="/"><h3>Financial Assistance</h3></a>
+               </div>
+               <div class="event">
+                  <img src="images/kheloindia.png" alt="Khelo">
+                  <h3></h3>
+                  <a class="link mt-2" href="/"><h3>Financial Assistance</h3></a>
+               </div>
+               <div class="event">
+                  <img src="images/statelevelcommittee.png" alt="State Level">
+                  <h3></h3>
+                  <a class="link mt-2" href="/"><h3>Financial Assistance</h3></a>
+               </div>
+            </div>
+
+
+            {{-- <div class="container">
                <div class="card">
                    <div class="card-image">
                        <img src="images/financeasisst.png" alt="Finance">
@@ -23,7 +48,7 @@
                        <img src="images/statelevelcommittee.png" alt="StateCommittee">
                    </div>
                </div>
-           </div>
+           </div> --}}
     
 </div>
             <h1 class="client_taital">Recent Notifications</h1>

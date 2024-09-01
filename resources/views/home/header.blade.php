@@ -58,7 +58,7 @@
                
 
                <div class="menu_main">
-                  {{-- <div style="border: 3px solid white; background-image: linear-gradient(to right, white, #faf0e6); padding: 0px; border-radius: 15px;">                   --}}
+            
                   <ul>
                      <div class="logo">
                         <a href="">
@@ -68,7 +68,7 @@
                         <img src="images/file.png" style="width: 100px; height: auto;">
                         </a> --}}
                      </div>
-                     <li class="active"><a href="index.html">Home</a></li>
+                     <li class="active"><a href="index.html">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Home</a></li>
                      <li><a href="about.html">Organizations</a></li>
                      <li><a href="about.html">Information</a></li>
                      <li><a href="about.html">Documents</a></li>
