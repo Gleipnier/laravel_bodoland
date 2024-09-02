@@ -58,16 +58,16 @@
                
 
                <div class="menu_main">
-            
+                  <div class="logo">
+                     <a href="">
+                     <img src="images/logo.png" style="width: 300px; height: auto;">
+                     </a>
+                     {{-- <a href="">
+                     <img src="images/file.png" style="width: 100px; height: auto;">
+                     </a> --}}
+                  </div>
                   <ul>
-                     <div class="logo">
-                        <a href="">
-                        <img src="images/logo.png" style="width: 300px; height: auto;">
-                        </a>
-                        {{-- <a href="">
-                        <img src="images/file.png" style="width: 100px; height: auto;">
-                        </a> --}}
-                     </div>
+                     
                      <li class="active"><a href="index.html">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Home</a></li>
                      <li><a href="about.html">Organizations</a></li>
                      <li><a href="about.html">Information</a></li>
