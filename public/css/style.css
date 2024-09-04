@@ -1123,6 +1123,71 @@ a:hover {
 
 /* choose section end */
 
+/* officer table section start */
+
+.officer-container {
+    width: 90%;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+}
+
+.officer-container h2 {
+    text-align: center;
+    color: #003366;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.officer-container p {
+    text-align: center;
+    color: #333;
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+.offices-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    font-size: 16px;
+    text-align: left;
+}
+
+.offices-table thead tr {
+    background-color: #28a745;
+    color: white;
+}
+
+.offices-table th, .offices-table td {
+    padding: 12px 15px;
+    border: 1px solid #ddd;
+}
+
+.offices-table tbody tr {
+    background-color: #f9f9f9;
+}
+
+.offices-table tbody tr:nth-of-type(even) {
+    background-color: #f2f2f2;
+}
+
+.offices-table tbody tr:hover {
+    background-color: #ddd;
+}
+
+.offices-table th {
+    font-weight: bold;
+}
+
+.offices-table td {
+    color: #333;
+}
+
+
+/* officer table section end */
+
 /* contact section start */
 .contact-sectional {
     border-top: 1px solid #ccc;

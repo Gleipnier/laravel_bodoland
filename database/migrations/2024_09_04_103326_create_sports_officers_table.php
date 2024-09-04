@@ -13,6 +13,10 @@ return new class extends Migration
     {
         Schema::create('sports_officers', function (Blueprint $table) {
             $table->id();
+            $table->string('district');
+            $table->string('name');
+            $table->string('designation');
+            $table->string('contact_number');
             $table->timestamps();
         });
     }

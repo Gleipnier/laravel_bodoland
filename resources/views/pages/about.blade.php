@@ -24,6 +24,10 @@
       </div>
       @include('home.about')
 
+      <div class="downnload-button">
+         hi
+      </div>
+
       <div class="about_section layout_padding">
         <div class="container-fluid">
            <div class="row">
@@ -95,7 +99,73 @@
         </div>
      </div>
       <!-- about section end -->
-      
+      <div class="officer-container" style="padding-bottom: 5rem">
+         <h1 style="padding-left: 32rem">OUR DIVISIONS/FIELD OFFICES</h1>
+         <p>NAME & CONTACT NUMBER OF DISTRICT SPORTS OFFICERS AND SUB-ORDINATE OFFICERS UNDER SPORTS & YOUTH WELFARE DEPTT. BTC, KOKRAJHAR.</p>
+         
+         <table class="offices-table">
+             <thead>
+                 <tr>
+                     <th>Sl No.</th>
+                     <th>District</th>
+                     <th>Name of Officer</th>
+                     <th>Designation</th>
+                     <th>Contact Number</th>
+                 </tr>
+             </thead>
+             <tbody>
+                 <tr>
+                     <td>1</td>
+                     <td>Udalguri</td>
+                     <td>Sri Swmdwn Muchahary</td>
+                     <td>District Sports Officer</td>
+                     <td>8132801530</td>
+                 </tr>
+                 <tr>
+                     <td>2</td>
+                     <td>-Do-</td>
+                     <td>Sri Bhupen Rabha</td>
+                     <td>SDSO</td>
+                     <td>9678421536</td>
+                 </tr>
+                 <tr>
+                     <td>3</td>
+                     <td>-Do-</td>
+                     <td>Sri Anil Daimary</td>
+                     <td>IPE</td>
+                     <td>7002883737</td>
+                 </tr>
+                 <tr>
+                     <td>4</td>
+                     <td>Kokrajhar</td>
+                     <td>Sri Pradip Kr. Narzary</td>
+                     <td>District Sports Officer, I/c</td>
+                     <td>9101017374</td>
+                 </tr>
+                 <tr>
+                     <td>5</td>
+                     <td>Chirang</td>
+                     <td>Sri Dasarath Brahma</td>
+                     <td>District Sports Officer, I/c</td>
+                     <td>8133846092</td>
+                 </tr>
+                 <tr>
+                     <td>6</td>
+                     <td>Baksa</td>
+                     <td>Sri Debanga Mahilary</td>
+                     <td>District Sports Officer, I/c</td>
+                     <td>6000519780</td>
+                 </tr>
+                 <tr>
+                     <td>7</td>
+                     <td>Kokrajhar</td>
+                     <td>Sri Motilal Borgoyary</td>
+                     <td>SDSO attached to CHD Office</td>
+                     <td>9435720466</td>
+                 </tr>
+             </tbody>
+         </table>
+         </div>
       <!-- footer section start -->
       @include('home.footer')  
    </body>

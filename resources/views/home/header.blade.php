@@ -68,7 +68,7 @@
                   </div>
                   <ul>
                      
-                     <li class="active"><a href="index.html">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Home</a></li>
+                     <li class="active"><a href="{{ route('homepage') }}">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Home</a></li>
                      <li><a href="about.html">Organizations</a></li>
                      <li><a href="about.html">Information</a></li>
                      <li><a href="about.html">Documents</a></li>

@@ -41,3 +41,10 @@ Route::get('/about', function () {
 Route::get('/contact', function () {
     return view('pages.contact');
 })->name('contact');
+
+Route::get('/homepage', function () {
+    return view('home.homepage');
+})->name('homepage');
+
+
+
