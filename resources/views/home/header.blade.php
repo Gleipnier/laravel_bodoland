@@ -72,9 +72,9 @@
                      <li><a href="about.html">Organizations</a></li>
                      <li><a href="about.html">Information</a></li>
                      <li><a href="about.html">Documents</a></li>
-                     <li><a href="about.html">About</a></li>
+                     <li><a href="{{ route('about') }}">About</a></li>
                      <li><a href="about.html">Gallery</a></li>
-                     <li><a href="contact.html">Contact</a></li>
+                     <li><a href="{{ route('contact') }}">Contact</a></li>
                      @if (Route::has('login'))
                      @auth
                      <li><x-app-layout></x-app-layout></li>
