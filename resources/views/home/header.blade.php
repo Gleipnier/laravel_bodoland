@@ -1,7 +1,7 @@
 <div class="header_main">
             <div class="mobile_menu">
                
-               <div style="border: 3px solid #454545; background-color:#454545; padding: 10px; position: fixed; z-index: 1000;">
+               <div style="border: 3px solid #faf0e6; background-color:#faf0e6; padding: 10px; position: fixed; z-index: 1000;">
                <nav class="navbar navbar-expand-lg navbar-light bg-light">
                   <div class="logo_mobile"><a href=""><img src="images/logo.png"></a></div>
                   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
