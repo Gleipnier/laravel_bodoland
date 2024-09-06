@@ -1,5 +1,5 @@
 <div class="contact_section layout_padding">
-        <div class="container">
+        <div class="container" style="margin-top: 2%">
          <h1 class="contact_taital">Contact Us</h1>
          <div class="contact-sectional">
             <p>Directorate of Sports & Youth Welfare<br>

@@ -24,7 +24,7 @@
       </div>
       @include('home.about')
 
-      <div class="downnload-button">
+      <div class="downnload-button" style="color:white">
          hi
       </div>
 

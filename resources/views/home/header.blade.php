@@ -1,6 +1,7 @@
 <div class="header_main">
             <div class="mobile_menu">
-               <div style="border: 3px solid black; background-color: rgb(211, 211, 211); padding: 10px;">
+               
+               <div style="border: 3px solid #454545; background-color:#454545; padding: 10px; position: fixed; z-index: 1000;">
                <nav class="navbar navbar-expand-lg navbar-light bg-light">
                   <div class="logo_mobile"><a href=""><img src="images/logo.png"></a></div>
                   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -9,25 +10,25 @@
                   <div class="collapse navbar-collapse" id="navbarNav">
                      <ul class="navbar-nav">
                         <li class="nav-item">
-                           <a class="nav-link" href="index.html">Home</a>
+                           <a class="nav-link" href="{{ route('homepage') }}">Home</a>
                         </li>
                         <li class="nav-item">
-                           <a class="nav-link" href="about.html">Organizations</a>
+                           <a class="nav-link" href="{{ route('organizations') }}">Organizations</a>
                         </li>
                         <li class="nav-item">
-                           <a class="nav-link" href="services.html">Information & Service</a>
-                        </li>
-                        {{-- <li class="nav-item">
-                           <a class="nav-link " href="about.html">Documents</a>
-                        </li> --}}
-                        <li class="nav-item">
-                           <a class="nav-link " href="about.html">About Us</a>
+                           <a class="nav-link" href="{{ route('information') }}">Information & Service</a>
                         </li>
                         <li class="nav-item">
-                           <a class="nav-link " href="about.html">Gallery</a>
+                           <a class="nav-link " href="{{ route('documents') }}">Documents</a>
                         </li>
                         <li class="nav-item">
-                           <a class="nav-link " href="contact.html">Contact</a>
+                           <a class="nav-link " href="{{ route('about') }}">About Us</a>
+                        </li>
+                        <li class="nav-item">
+                           <a class="nav-link " href="{{ route('gallery') }}">Gallery</a>
+                        </li>
+                        <li class="nav-item">
+                           <a class="nav-link " href="{{ route('contact') }}">Contact</a>
                         </li>
                         @if (Route::has('login'))
 
@@ -69,11 +70,11 @@
                   <ul>
                      
                      <li class="active"><a href="{{ route('homepage') }}">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Home</a></li>
-                     <li><a href="about.html">Organizations</a></li>
-                     <li><a href="about.html">Information</a></li>
-                     <li><a href="about.html">Documents</a></li>
+                     <li><a href="{{ route('organizations') }}">Organizations</a></li>
+                     <li><a href="{{ route('information') }}">Information</a></li>
+                     <li><a href="{{ route('documents') }}">Documents</a></li>
                      <li><a href="{{ route('about') }}">About</a></li>
-                     <li><a href="about.html">Gallery</a></li>
+                     <li><a href="{{ route('gallery') }}">Gallery</a></li>
                      <li><a href="{{ route('contact') }}">Contact</a></li>
                      @if (Route::has('login'))
                      @auth

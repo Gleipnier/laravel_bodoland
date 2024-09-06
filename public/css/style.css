@@ -257,8 +257,9 @@ button {
     float: left;
     background-image: url(../images/gov3.jpg);
     height: 99vh;
-    background-size: 100%;
+    background-size: cover;
     padding: 0px 0px 20px 0px;
+    background-repeat: no-repeat;
 }
 
 .bg-light {
@@ -1122,6 +1123,11 @@ a:hover {
 
 
 /* choose section end */
+
+/* gallery section start */
+
+
+/* gallery section end */
 
 /* officer table section start */
 

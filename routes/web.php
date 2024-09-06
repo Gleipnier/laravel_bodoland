@@ -46,5 +46,18 @@ Route::get('/homepage', function () {
     return view('home.homepage');
 })->name('homepage');
 
+Route::get('/organizations', function () {
+    return view('pages.organizations');
+})->name('organizations');
 
+Route::get('/documents', function () {
+    return view('pages.documents');
+})->name('documents');
 
+Route::get('/information', function () {
+    return view('pages.information');
+})->name('information');
+
+Route::get('/gallery', function () {
+    return view('pages.gallery');
+})->name('gallery');

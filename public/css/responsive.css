@@ -128,10 +128,7 @@
 }
 
 @media (min-width: 992px) and (max-width: 1199px) {
-    .header_section {
-        padding: 0px;
-        background-size: cover;
-    }
+
     .banner_text {
         width: 100%;
     }
@@ -198,10 +195,7 @@
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
-    .header_section {
-        padding: 0px;
-        background-size: cover;
-    }
+
     .banner_text {
         width: 100%;
     }
@@ -287,11 +281,7 @@
         top: 90%;
         display: none;
     }
-    .header_section {
-        background-image: url(../images/mobile-bg.png);
-        background-size: cover;
-        padding: 0px;
-    }
+
     .navbar-toggler {
         background-color: #ffffff;
     }
@@ -486,11 +476,7 @@
         top: 90%;
         display: none;
     }
-    .header_section {
-        background-image: url(../images/mobile-bg.png);
-        background-size: cover;
-        padding: 0px; 
-    }
+
     .navbar-toggler {
         background-color: #ffffff;
     }
