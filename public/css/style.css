@@ -1137,6 +1137,7 @@ a:hover {
     padding: 20px;
     background-color: #f9f9f9;
     border-radius: 8px;
+    display: flex;
 }
 
 .officer-container h2 {

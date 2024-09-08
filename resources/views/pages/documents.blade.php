@@ -24,10 +24,11 @@
 
       </div>
       <div class="officer-container" style="padding-bottom: 5rem">
-        <h1 style="padding-left: 37rem">Documents</h1>
+        <h2>Documents</h2>
 
         
         <table class="offices-table">
+            
             <thead>
                 <tr>
                     <th>Title</th>

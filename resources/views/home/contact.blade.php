@@ -16,7 +16,7 @@
                 BTC, Kokrajhar.</p>
             </div>   
             <div class="contact-photo">
-                <img src="placeholder-image.jpg" alt="Profile Photo">
+                <img src="images/placeholderhuman.jpg" alt="Profile Photo">
             </div>
         </div>
         <div class="contact-sectional">
@@ -27,7 +27,7 @@
             BTC, Kokrajhar.</p>
           </div>   
           <div class="contact-photo">
-             <img src="placeholder-image.jpg" alt="Profile Photo">
+             <img src="images/placeholderhuman.jpg" alt="Profile Photo">
           </div>
          </div>
          <div class="contact-sectional">
@@ -37,7 +37,7 @@
                   Udalguri, BTC.</p>
              </div>   
              <div class="contact-photo">
-                <img src="placeholder-image.jpg" alt="Profile Photo">
+                <img src="images/placeholderhuman.jpg" alt="Profile Photo">
              </div>
             </div>
             <div class="contact-sectional">
@@ -47,7 +47,7 @@
                      Chirang, BTC.<br>
                 </div>   
                 <div class="contact-photo">
-                   <img src="placeholder-image.jpg" alt="Profile Photo">
+                   <img src="images/placeholderhuman.jpg" alt="Profile Photo">
                 </div>
                </div>
                <div class="contact-sectional">
@@ -57,7 +57,7 @@
                         Baksa, BTC.<br>
                    </div>   
                    <div class="contact-photo">
-                      <img src="placeholder-image.jpg" alt="Profile Photo">
+                      <img src="images/placeholderhuman.jpg" alt="Profile Photo">
                    </div>
                   </div>
                   <div class="contact-sectional">
@@ -68,7 +68,7 @@
                            Udalguri, BTR.</p>
                       </div>   
                       <div class="contact-photo">
-                         <img src="placeholder-image.jpg" alt="Profile Photo">
+                         <img src="images/placeholderhuman.jpg" alt="Profile Photo">
                       </div>
                      </div>
                      <div class="contact-sectional">
@@ -79,7 +79,7 @@
                               Udalguri, BTC.</p>
                          </div>   
                          <div class="contact-photo">
-                            <img src="placeholder-image.jpg" alt="Profile Photo">
+                            <img src="images/placeholderhuman.jpg" alt="Profile Photo">
                          </div>
                         </div>
         </div>

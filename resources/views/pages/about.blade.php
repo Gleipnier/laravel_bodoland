@@ -100,7 +100,7 @@
      </div>
       <!-- about section end -->
       <div class="officer-container" style="padding-bottom: 5rem">
-         <h1 style="padding-left: 32rem">OUR DIVISIONS/FIELD OFFICES</h1>
+         <h2>OUR DIVISIONS/FIELD OFFICES</h2>
          <p>NAME & CONTACT NUMBER OF DISTRICT SPORTS OFFICERS AND SUB-ORDINATE OFFICERS UNDER SPORTS & YOUTH WELFARE DEPTT. BTC, KOKRAJHAR.</p>
          
          <table class="offices-table">
