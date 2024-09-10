@@ -42,11 +42,11 @@ class PostController extends Controller
     public function index()
     {
         $posts = Post::orderBy('created_at', 'desc')->get();
-        return view('posts.index', compact('posts'));
+        return view('posts.indexposts', compact('posts'));
     }
     public function edit(Post $post)
     {
-    return view('posts.newedit', compact('post'));
+    return view('admin.edit', compact('post'));
     }
 
     public function destroy($id) {
@@ -54,7 +54,7 @@ class PostController extends Controller
         $post = Post::find($id);
 
         if (!$post) {
-            return redirect()->route('posts.index')->with('error', 'Post not found');
+            return redirect()->route('posts.indexposts')->with('error', 'Post not found');
         }
 
         // Delete the post
@@ -62,6 +62,6 @@ class PostController extends Controller
         if (Storage::exists('public/' . $post->document)) {
             Storage::delete('public/' . $post->document);
         }
-        return redirect()->route('posts.index')->with('success', 'Post deleted successfully');
+        return redirect()->route('posts.indexposts')->with('success', 'Post deleted successfully');
 }
 }

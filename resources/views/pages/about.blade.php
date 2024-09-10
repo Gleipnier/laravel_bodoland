@@ -19,9 +19,7 @@
       <!-- header section end -->
 
       <!-- about section start -->
-      <div class="about-section layout_padding" style="padding-bottom: 60%">
-
-      </div>
+      
       @include('home.about')
 
       <div class="downnload-button" style="color:white">

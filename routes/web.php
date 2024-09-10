@@ -91,9 +91,18 @@ Route::get('/dashboard', function () {
     return view('admin.index');
 })->middleware(['auth', 'verified'])->name('dashboard');
 
-Route::get('/index', function () {
-    return view('posts.index');
-})->middleware(['auth', 'verified'])->name('index');
+// Posts View
+
+Route::get('/indexposts', [PostController::class, 'index'])->middleware(['auth', 'verified'])->name('posts.indexposts');
+
+// Information View
+
+Route::get('/indexinformation', [PostController::class, 'index'])->middleware(['auth', 'verified'])->name('posts.indexinformation');
+
+// Officers View
+
+Route::get('/indexofficers', [PostController::class, 'index'])->middleware(['auth', 'verified'])->name('posts.indexofficers');
+
 
 Route::middleware('auth')->group(function () {
     Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');

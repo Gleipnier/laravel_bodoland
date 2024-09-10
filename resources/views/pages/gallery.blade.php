@@ -66,9 +66,9 @@
       <!-- header section end -->
 
       <!-- gallery section start -->
-      <div class="about-section layout_padding" style="padding-bottom: 50%">
+      {{-- <div class="about-section layout_padding" style="padding-bottom: 50%">
 
-      </div>
+      </div> --}}
       <h1>Simple Image Gallery</h1>
       <div class="gallery">
           <div class="gallery-item">

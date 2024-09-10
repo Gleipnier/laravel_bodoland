@@ -20,9 +20,9 @@
 
       <!-- document section start -->
 
-      <div class="about-section layout_padding" style="padding-bottom: 60%">
+      {{-- <div class="about-section layout_padding" style="padding-bottom: 60%">
 
-      </div>
+      </div> --}}
       <div class="officer-container" style="padding-bottom: 5rem">
         <h2>Documents</h2>
 

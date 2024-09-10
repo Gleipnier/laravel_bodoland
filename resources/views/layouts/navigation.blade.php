@@ -15,13 +15,13 @@
                     <x-nav-link :href="route('dashboard')" :active="request()->routeIs('dashboard')">
                         {{ __('Dashboard') }}
                     </x-nav-link>
-                    <x-nav-link :href="route('index')" :active="request()->routeIs('index')">
+                    <x-nav-link :href="route('posts.indexposts')" :active="request()->routeIs('posts.indexposts')">
                         {{ __('View Posts') }}
                     </x-nav-link> 
-                    <x-nav-link :href="route('index')" :active="request()->routeIs('index')">
+                    <x-nav-link :href="route('posts.indexinformation')" :active="request()->routeIs('posts.indexinformation')">
                         {{ __('View Information') }}
                     </x-nav-link> 
-                    <x-nav-link :href="route('index')" :active="request()->routeIs('index')">
+                    <x-nav-link :href="route('posts.indexofficers')" :active="request()->routeIs('posts.indexofficers')">
                         {{ __('View Sports Officers') }}
                     </x-nav-link> 
                     

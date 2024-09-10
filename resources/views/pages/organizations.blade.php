@@ -20,9 +20,9 @@
 
       <!-- about section start -->
 
-      <div class="about-section layout_padding" style="padding-bottom: 60%">
+      {{-- <div class="about-section layout_padding" style="padding-bottom: 60%">
 
-      </div>
+      </div> --}}
 
       @include('home.about')
       <!-- about section end -->
