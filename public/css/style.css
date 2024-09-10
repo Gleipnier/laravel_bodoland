@@ -257,7 +257,7 @@ button {
     width: 100%;
     float: left;
     /* background-image: url(../images/gov3.jpg); */
-    height: 20vh;
+    /* height: 20vh; */
     background-size: cover;
     padding: 0px 0px 20px 0px;
     background-repeat: no-repeat;
@@ -389,7 +389,7 @@ button {
     width: 100%;
     /* background-image: url(../images/gov3.jpg); */
     background-size: 100%;
-    padding: 10px 0px 110px 0px;
+    padding: 10px 0px 50px 0px;
 }
 
 
@@ -400,7 +400,7 @@ button {
 
 .banner_section {
     width: 100%;
-    float: left;
+    /* float: left; */
 }
 
 .banner_taital {
@@ -452,29 +452,7 @@ button {
 
 /* services section start */
 
-.swiper-container {
-    width: 100%;
-    height: 100%;
-}
-.swiper-slide {
-    text-align: center;
-    font-size: 18px;
-    background: #fff;
 
-    /* Center slide text vertically */
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: -webkit-flex;
-    display: flex;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    -webkit-justify-content: center;
-    justify-content: center;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    -webkit-align-items: center;
-    align-items: center;
-}
 
 
 .services_section {
@@ -721,6 +699,7 @@ button {
     display: flex;
     justify-content: space-between;
     padding-top: 5%;
+    padding-left: 50px;
 }
 .latest-section {
     width: 48%;

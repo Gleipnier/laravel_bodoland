@@ -24,10 +24,6 @@
       @include('home.about')
       <!-- about section end -->
 
-      <!-- blog section start -->
-      
-      <!-- blog section end -->
-
       <!-- client section start -->
       @include('home.notifications')
       <!-- client section end -->
