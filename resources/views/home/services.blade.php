@@ -2,112 +2,23 @@
 <div class="services_section layout_padding">
     <h1 class="services_taital" style="margin-top: 22px">Services </h1>
     <p class="services_text">You can Apply for Tournaments or Personal/Team Coahing</p>
-    <div class="services-container">
-        {{-- <div class="swiper-container services-slider">
-            <div class="swiper-wrapper">
+    <div class="services-container">        
+        <div class="services-slider">
+            <div class="services-track">
                 @foreach($services as $service)
-                    <div class="swiper-slide">
+                    @if(in_array($service->id, [1, 2, 3])) <!-- Display only services with ID 1, 2, or 3 -->
                         <div class="service-card">
                             <img src="{{ asset($service->image_path) }}" alt="{{ $service->title }}">
                             <h3>{{ $service->title }}</h3>
                             <p>{{ $service->description }}</p>
-                            <a href="#" class="view-details">View Details</a>
+                            <!-- Link to view individual service details using its ID -->
+                            <a href="{{ route('services.show', $service->id) }}" class="view-details">View Details</a>
                         </div>
-                    </div>
+                    @endif
                 @endforeach
-
-            </div>
-            <div class="swiper-pagination"></div>
-            <div class="swiper-button-next"></div>
-            <div class="swiper-button-prev"></div>
-        </div> --}}
-        
-        <div class="client_section_2">
-            <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-               <ol class="carousel-indicators">
-                  <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-                  <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-                  <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-               </ol>
-               <div class="carousel-inner">
-                  <div class="carousel-item active">
-                     <div class="client_main">
-                        <div class="box_left">
-
-                        </div>
-                        <div class="box_right">
-
-                        </div>
-                     </div>
-                  </div>
-                  <div class="carousel-item">
-                     <div class="client_main">
-                        <div class="box_left">
-
-                        </div>
-                        <div class="box_right">
-
-                        </div>
-                     </div>
-                  </div>
-                  <div class="carousel-item">
-                     <div class="client_main">
-                        <div class="box_left">
-
-                        </div>
-                        <div class="box_right">
-
-                        </div>
-                     </div>
-                  </div>
-               </div>
             </div>
             
-         </div>
-
-
-
-        {{-- <div class="services-slider">
-            <div class="services-track">
-                <div class="service-card">
-                    <img src="images/sports.png" alt="Sports Coaching">
-                    <h3>Services</h3>
-                    <p>Sports Tournaments</p>
-                    <a href="#" class="view-details">View Details</a>
-                </div>
-                <div class="service-card">
-                    <img src="images/coach.jpg" alt="Personal Coaching">
-                    <h3>Services</h3>
-                    <p>Personal Coaching</p>
-                    <a href="#" class="view-details">View Details</a>
-                </div>
-                <div class="service-card">
-                    <img src="images/soccer-coach-post.png" alt="Team Coaching">
-                    <h3>Services</h3>
-                    <p>Team Coaching</p>
-                    <a href="#" class="view-details">View Details</a>
-                </div>
-                <div class="service-card">
-                    <img src="placeholder" alt="Some training">
-                    <h3>Services</h3>
-                    <p>Some training</p>
-                    <a href="#" class="view-details">View Details</a>
-                </div>
-                <div class="service-card">
-                    <img src="placeholder" alt="Some training">
-                    <h3>Services</h3>
-                    <p>Some training</p>
-                    <a href="#" class="view-details">View Details</a>
-                </div>
-                <div class="service-card">
-                    <img src="placeholder" alt="Some training">
-                    <h3>Services</h3>
-                    <p>Some training</p>
-                    <a href="#" class="view-details">View Details</a>
-                </div>
-                <!-- Add more service cards as needed -->
-            </div>
-        </div> --}}
+        </div>
 
     </div>
     
@@ -170,3 +81,4 @@
         </div>
     </div>
 </div>
+
