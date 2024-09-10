@@ -11,10 +11,6 @@
 
          @include('home.header')
 
-         <!-- banner section start -->
-         @include('home.banner')
-         <!-- banner section end -->
-
       </div>
       <!-- header section end -->
 

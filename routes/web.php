@@ -6,6 +6,7 @@ use App\Http\Controllers\HomeController;
 use App\Http\Controllers\PostController;
 use App\Http\Controllers\AdminController;
 use App\Http\Controllers\ProfileController;
+use App\Http\Controllers\ServiceController;
 
 /*
 |--------------------------------------------------------------------------
@@ -118,3 +119,8 @@ Route::get('admin/dashboard',[HomeController::class,'index'])->
     middleware(['auth','admin']);
     
 Route::get('edit/{id}',[AdminController::class,'edit']);
+
+
+// For Service Slider
+
+Route::resource('services', ServiceController::class);

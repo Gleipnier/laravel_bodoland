@@ -59,9 +59,6 @@
 
          @include('home.header')
 
-         <!-- banner section start -->
-         <!-- banner section end -->
-
       </div>
       <!-- header section end -->
 

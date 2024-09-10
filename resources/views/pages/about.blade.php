@@ -11,10 +11,6 @@
 
          @include('home.header')
 
-         <!-- banner section start -->
-         @include('home.banner')
-         <!-- banner section end -->
-
       </div>
       <!-- header section end -->
 
@@ -97,9 +93,10 @@
         </div>
      </div>
       <!-- about section end -->
-      <div class="officer-container" style="padding-bottom: 5rem">
-         <h2>OUR DIVISIONS/FIELD OFFICES</h2>
-         <p>NAME & CONTACT NUMBER OF DISTRICT SPORTS OFFICERS AND SUB-ORDINATE OFFICERS UNDER SPORTS & YOUTH WELFARE DEPTT. BTC, KOKRAJHAR.</p>
+      <h1 style="padding-left: 6rem">OUR DIVISIONS/FIELD OFFICES</h1>
+      <p style="padding-left:5rem">NAME & CONTACT NUMBER OF DISTRICT SPORTS OFFICERS AND SUB-ORDINATE OFFICERS UNDER SPORTS & YOUTH WELFARE DEPTT. BTC, KOKRAJHAR.</p>
+      <div class="officer-container">
+
          
          <table class="offices-table">
              <thead>

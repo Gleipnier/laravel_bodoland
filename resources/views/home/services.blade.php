@@ -1,8 +1,34 @@
+<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 
 <div class="services_section layout_padding">
     <div class="services-container">
         <h1 class="services_taital">Services </h1>
         <p class="services_text">You can Apply for Tournaments or Personal/Team Coahing</p>
+
+        {{-- <div class="swiper-container services-slider">
+            <div class="swiper-wrapper">
+                @foreach($services as $service)
+                    <div class="swiper-slide">
+                        <div class="service-card">
+                            <img src="{{ asset($service->image_path) }}" alt="{{ $service->title }}">
+                            <h3>{{ $service->title }}</h3>
+                            <p>{{ $service->description }}</p>
+                            <a href="#" class="view-details">View Details</a>
+                        </div>
+                    </div>
+                @endforeach
+
+            </div>
+            <div class="swiper-pagination"></div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+        </div> --}}
+        
+
+
+
+
         <div class="services-slider">
             <div class="services-track">
                 <div class="service-card">

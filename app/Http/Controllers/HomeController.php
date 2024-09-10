@@ -3,7 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-
+use App\Models\Service;
 use App\Models\User;
 
 use Illuminate\Support\Facades\Auth;
@@ -17,11 +17,12 @@ class HomeController extends Controller
 
             if($usertype=='user')
             {
-                return view('home.homepage');
+                $services = Service::all();
+                return view('home.homepage', compact('services'));
             }
             else if($usertype=='admin')
             {
-                return view('admin.index');
+                return view('admin.index', compact('services'));
             }
             else {
                 return redirect()->back();
@@ -36,6 +37,8 @@ class HomeController extends Controller
 
     public function homepage()
     {
-        return view('home.homepage');
+        
+        $services = Service::all();
+        return view('home.homepage', compact('services'));
     }
 }

@@ -242,7 +242,8 @@ button {
 
 .layout_padding {
     /* padding-top: 90px; */
-    padding-bottom: 0px;
+    width: 100%;
+    float: left;
 }
 
 .padding_0 {
@@ -256,7 +257,7 @@ button {
     width: 100%;
     float: left;
     /* background-image: url(../images/gov3.jpg); */
-    height: 99vh;
+    height: 20vh;
     background-size: cover;
     padding: 0px 0px 20px 0px;
     background-repeat: no-repeat;
@@ -400,7 +401,6 @@ button {
 .banner_section {
     width: 100%;
     float: left;
-    /* padding-bottom: 200px; */
 }
 
 .banner_taital {
@@ -451,6 +451,31 @@ button {
 
 
 /* services section start */
+
+.swiper-container {
+    width: 100%;
+    height: 100%;
+}
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+}
+
 
 .services_section {
     width: 100%;

@@ -25,30 +25,6 @@
                   <a class="link mt-2" href="/"><h3>Financial Assistance</h3></a>
                </div>
             </div>
-
-
-            {{-- <div class="container">
-               <div class="card">
-                   <div class="card-image">
-                       <img src="images/financeasisst.png" alt="Finance">
-                   </div>
-               </div>
-               <div class="card">
-                   <div class="card-image">
-                       <img src="images/sportsacademy.png" alt="Sport Academy">
-                   </div>
-               </div>
-               <div class="card">
-                   <div class="card-image">
-                       <img src="images/kheloindia.png" alt="KheloIndia">
-                   </div>
-               </div>
-               <div class="card">
-                   <div class="card-image">
-                       <img src="images/statelevelcommittee.png" alt="StateCommittee">
-                   </div>
-               </div>
-           </div> --}}
     
 </div>
             <h1 class="client_taital">Recent Notifications</h1>

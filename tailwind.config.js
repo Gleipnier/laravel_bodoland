@@ -1,5 +1,7 @@
 import defaultTheme from 'tailwindcss/defaultTheme';
 import forms from '@tailwindcss/forms';
+import Swiper from 'swiper';
+import 'swiper/swiper-bundle.min.css';
 
 /** @type {import('tailwindcss').Config} */
 export default {

@@ -11,10 +11,6 @@
 
          @include('home.header')
 
-         <!-- banner section start -->
-         @include('home.banner')
-         <!-- banner section end -->
-
       </div>
       <!-- header section end -->
 
@@ -23,8 +19,9 @@
       {{-- <div class="about-section layout_padding" style="padding-bottom: 60%">
 
       </div> --}}
+      <h1 style="text-align: center">Documents</h1>
+
       <div class="officer-container" style="padding-bottom: 5rem">
-        <h2>Documents</h2>
 
         
         <table class="offices-table">
