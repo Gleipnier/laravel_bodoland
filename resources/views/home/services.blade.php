@@ -1,5 +1,5 @@
 
-<div class="services_section layout_padding">
+<div class="services_section layout_padding" style="padding-top: 120px">
     <h1 class="services_taital" style="margin-top: 22px">Services </h1>
     <p class="services_text">You can Apply for Tournaments or Personal/Team Coahing</p>
     <div class="services-container">        
