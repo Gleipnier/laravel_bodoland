@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Models\Service;
 use App\Models\User;
+use App\Models\Information;
 
 use Illuminate\Support\Facades\Auth;
 class HomeController extends Controller
@@ -41,4 +42,10 @@ class HomeController extends Controller
         $services = Service::all();
         return view('home.homepage', compact('services'));
     }
+
+    public function showInformation() {
+        $information = Information::all(); // Assuming you have an Information model
+        return view('your_view_name', compact('information'));
+    }
+    
 }

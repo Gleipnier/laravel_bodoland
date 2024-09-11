@@ -7,6 +7,7 @@ use App\Http\Controllers\PostController;
 use App\Http\Controllers\AdminController;
 use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\ServiceController;
+use App\Models\information;
 
 /*
 |--------------------------------------------------------------------------
@@ -58,7 +59,8 @@ Route::get('/documents', function () {
 })->name('documents');
 
 Route::get('/information', function () {
-    return view('pages.information');
+    $information = Information::all(); // Fetch all data from the Information model
+    return view('pages.information', compact('information')); // Pass it to the view
 })->name('information');
 
 Route::get('/gallery', function () {
