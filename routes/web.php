@@ -73,6 +73,10 @@ Route::get('/gallery', function () {
     return view('pages.gallery');
 })->name('gallery');
 
+Route::get('/testing', function () {
+    return view('pages.testing');
+})->name('testing');
+
 
 
 //For making posts
