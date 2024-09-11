@@ -20,24 +20,24 @@
             </tr>
         </thead>
         <tbody>
-            @foreach($posts as $post)
+            @foreach($information as $info)
             <tr>
-                <td>{{ $post->id }}</td>
-                <td>{{ $post->title }}</td>
-                <td>{{ $post->description }}</td>
+                <td>{{ $info->id }}</td>
+                <td>{{ $info->title }}</td>
+                <td>{{ $info->description }}</td>
                 <td>
-                    @if($post->document)
-                        <a href="{{ asset('storage/' . $post->document) }}" target="_blank">View Document</a>
+                    @if($info->document)
+                        <a href="{{ asset('storage/' . $info->document) }}" target="_blank">View Document</a>
                     @else
                         No document
                     @endif
                 </td>
-                <td>{{ $post->created_at }}</td>
-                <td>{{ $post->updated_at }}</td>
+                <td>{{ $info->created_at }}</td>
+                <td>{{ $info->updated_at }}</td>
                 <td>
-                    <a href="{{ route('posts.edit', $post->id) }}" class="btn-edit">Edit</a>
+                    <a href="{{ route('posts.edit', $info->id) }}" class="btn-edit">Edit</a>
                     <!-- Delete Button -->
-                    <form action="{{ route('posts.destroy', $post->id) }}" method="POST" style="display:inline;">
+                    <form action="{{ route('posts.destroy', $info->id) }}" method="POST" style="display:inline;">
                         @csrf
                         @method('DELETE')
                         <button type="submit" class="btn-edit" onclick="return confirm('Are you sure you want to delete this post?')">Delete</button>

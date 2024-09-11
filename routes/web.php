@@ -1,16 +1,22 @@
 <?php
 
+use App\Models\service;
+use App\Models\Documents;
 use GuzzleHttp\Middleware;
+use App\Models\information;
+use App\Models\LatestUpdate;
+use App\Models\SportsOfficer;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\PostController;
 use App\Http\Controllers\AdminController;
+use App\Http\Controllers\HowDoIController;
 use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\ServiceController;
-use App\Models\information;
-use App\Models\service;
-use App\Models\Documents;  
-use App\Models\SportsOfficer;
+use App\Http\Controllers\OfficersController;
+use App\Http\Controllers\InformationController;
+use App\Http\Controllers\LatestUpdateController;
+use App\Http\Controllers\SustainableDevelopmentGoalController;
 
 /*
 |--------------------------------------------------------------------------
@@ -110,11 +116,11 @@ Route::get('/indexposts', [PostController::class, 'index'])->middleware(['auth',
 
 // Information View
 
-Route::get('/indexinformation', [PostController::class, 'index'])->middleware(['auth', 'verified'])->name('posts.indexinformation');
+Route::get('/indexinformation', [InformationController::class, 'index'])->middleware(['auth', 'verified'])->name('posts.indexinformation');
 
 // Officers View
 
-Route::get('/indexofficers', [PostController::class, 'index'])->middleware(['auth', 'verified'])->name('posts.indexofficers');
+Route::get('/indexofficers', [OfficersController::class, 'index'])->middleware(['auth', 'verified'])->name('posts.indexofficers');
 
 
 Route::middleware('auth')->group(function () {
@@ -136,3 +142,12 @@ Route::get('edit/{id}',[AdminController::class,'edit']);
 // For Service Slider
 
 Route::resource('services', ServiceController::class);
+
+
+// For LatestUpdate 
+
+Route::prefix('admin')->middleware(['auth', 'admin'])->group(function () {
+    Route::resource('latest-updates', LatestUpdateController::class);
+    Route::resource('how-do-i', HowDoIController::class);
+    Route::resource('sustainable-development-goals', SustainableDevelopmentGoalController::class);
+});
