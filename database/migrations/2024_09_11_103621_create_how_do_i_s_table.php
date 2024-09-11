@@ -13,6 +13,8 @@ return new class extends Migration
     {
         Schema::create('how_do_i_s', function (Blueprint $table) {
             $table->id();
+            $table->string('title');
+            $table->string('link');
             $table->timestamps();
         });
     }

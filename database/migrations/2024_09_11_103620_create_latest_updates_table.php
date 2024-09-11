@@ -13,6 +13,10 @@ return new class extends Migration
     {
         Schema::create('latest_updates', function (Blueprint $table) {
             $table->id();
+            $table->string('title');
+            $table->string('link');
+            $table->date('date');
+            $table->boolean('is_new')->default(false);
             $table->timestamps();
         });
     }

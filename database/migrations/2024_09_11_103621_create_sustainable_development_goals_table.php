@@ -13,6 +13,9 @@ return new class extends Migration
     {
         Schema::create('sustainable_development_goals', function (Blueprint $table) {
             $table->id();
+            $table->string('title');
+            $table->string('link');
+            $table->boolean('is_new')->default(false);
             $table->timestamps();
         });
     }
