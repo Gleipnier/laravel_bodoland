@@ -19,7 +19,7 @@
       {{-- <div class="about-section layout_padding" style="padding-bottom: 60%">
 
       </div> --}}
-      <div class="officer-container" style="padding-bottom: 5rem">
+    <div class="officer-container" style="padding-bottom: 5rem">
       
       <table class="offices-table">
           <thead>
