@@ -29,3 +29,14 @@
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css" media="screen">
       <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
       <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+      <script>
+            document.querySelectorAll(".dream img").forEach(image=>{
+                  image.onclick=()=>{
+                        document.querySelector(".popup-image").style.display="block";
+                        document.querySelector(".popup-image img").src=image.getAttribute("src");
+                  }
+            });
+            document.querySelector(".popup-image span").onclick=()=>{
+                  document.querySelector(".popup-image").style.display="none";
+            };
+      </script>
