@@ -11,7 +11,6 @@
                             <img src="{{ asset($service->image_path) }}" alt="{{ $service->title }}">
                             <h3>{{ $service->title }}</h3>
                             <p>{{ $service->description }}</p>
-                            <!-- Link to view individual service details using its ID -->
                             <a href="{{ route('services.show', $service->id) }}" class="view-details">View Details</a>
                         </div>
                     @endif

@@ -19,8 +19,10 @@
       {{-- <div class="about-section layout_padding" style="padding-bottom: 60%">
 
       </div> --}}
-    <div class="officer-container" style="padding-bottom: 5rem">
-        
+      <h1 style="text-align: center; padding-top:120px">Department Notice</h1>
+
+    <div class="officer-container" style="padding-bottom: 5rem; background-color: lightcyan;">
+
         <div class="information-container">
             @foreach($information as $info)
                 <div class="information-row" style="display: flex; flex-wrap: wrap; padding: 10px; border-bottom: 1px solid black;">

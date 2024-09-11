@@ -8,6 +8,9 @@ use App\Http\Controllers\AdminController;
 use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\ServiceController;
 use App\Models\information;
+use App\Models\service;
+use App\Models\Documents;  
+use App\Models\SportsOfficer;
 
 /*
 |--------------------------------------------------------------------------
@@ -39,7 +42,8 @@ Route::middleware('auth')->group(function () {
 require __DIR__.'/auth.php';
 
 Route::get('/about', function () {
-    return view('pages.about');
+    $officers = SportsOfficer::all(); 
+    return view('pages.about', compact('officers')); 
 })->name('about');
 
 Route::get('/contact', function () {
@@ -47,7 +51,8 @@ Route::get('/contact', function () {
 })->name('contact');
 
 Route::get('/homepage', function () {
-    return view('home.homepage');
+    $services = Service::all();
+    return view('home.homepage', compact('services'));
 })->name('homepage');
 
 Route::get('/organizations', function () {
@@ -55,7 +60,8 @@ Route::get('/organizations', function () {
 })->name('organizations');
 
 Route::get('/documents', function () {
-    return view('pages.documents');
+    $document = Documents::all(); 
+    return view('pages.documents', compact('document')); 
 })->name('documents');
 
 Route::get('/information', function () {
