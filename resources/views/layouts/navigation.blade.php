@@ -24,6 +24,12 @@
                     <x-nav-link :href="route('posts.indexofficers')" :active="request()->routeIs('posts.indexofficers')">
                         {{ __('View Sports Officers') }}
                     </x-nav-link> 
+                    <x-nav-link :href="route('admin.latest-updates.index')" :active="request()->routeIs('admin.latest-updates.index')">
+                        {{ __('Updates') }}
+                    </x-nav-link> 
+                    <x-nav-link :href="route('homepage')" :active="request()->routeIs('homepage')">
+                        {{ __('Home') }}
+                    </x-nav-link> 
                     
                 </div>
             </div>

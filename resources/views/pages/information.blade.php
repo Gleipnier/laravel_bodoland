@@ -24,19 +24,36 @@
     <div class="officer-container" style="padding-bottom: 5rem; background-color: lightcyan;">
 
         <div class="information-container">
+            <div class="information-row" style="display: flex; flex-wrap: wrap; padding: 10px; border-bottom: 1px solid black;">
+                <div class="information-column" style="flex: 1; padding: 10px;">
+                    <strong  style="font-size: 20px">ID:</strong>
+                </div>
+                <div class="information-column" style="flex: 2; padding: 10px;">
+                    <strong  style="font-size: 20px">Title:</strong>
+                </div>
+                <div class="information-column" style="flex: 3; padding: 10px;">
+                    <strong  style="font-size: 20px">Description:</strong>
+                </div>
+                <div class="information-column" style="flex: 2; padding: 10px;">
+                    <strong  style="font-size: 20px">Published Date:</strong>
+                </div>
+                <div class="information-column" style="flex: 1; padding: 10px;">
+                    <strong  style="font-size: 20px">Download:</strong>
+                </div>
+            </div>
             @foreach($information as $info)
                 <div class="information-row" style="display: flex; flex-wrap: wrap; padding: 10px; border-bottom: 1px solid black;">
                     <div class="information-column" style="flex: 1; padding: 10px;">
-                        <strong>ID:</strong> {{ $info->id }}
+                        {{ $info->id }}
                     </div>
                     <div class="information-column" style="flex: 2; padding: 10px;">
-                        <strong>Title:</strong> {{ $info->title }}
+                        {{ $info->title }}
                     </div>
                     <div class="information-column" style="flex: 3; padding: 10px;">
-                        <strong>Description:</strong> {{ $info->description }}
+                       {{ $info->description }}
                     </div>
                     <div class="information-column" style="flex: 2; padding: 10px;">
-                        <strong>Published Date:</strong> {{ \Carbon\Carbon::parse($info->created_at)->format('Y-m-d')}}
+                        {{ \Carbon\Carbon::parse($info->created_at)->format('Y-m-d')}}
                     </div>
                     <div class="information-column" style="flex: 1; padding: 10px;">
                         <a href="{{ asset($info->document) }}" download>Download</a>

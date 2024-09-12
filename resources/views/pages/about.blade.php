@@ -34,7 +34,7 @@
                  
               </div>
               <div class="col-md-6 padding_right_0">
-                 <div><img src="images/gov6.jpg" class="about_img" style="padding-top: 120px; padding-left:20px;"></div>
+                 <div><img src="images/gov6.jpg" class="about_img" style="padding-top: 120px; padding-left:20px; height: 420px; width: 590px;"></div>
               </div>
               
            </div>
@@ -98,22 +98,39 @@
       <div class="officer-container" style="background-color: cornsilk;">
 
          <div class="information-container">
+            <div class="information-row" style="display: flex; flex-wrap: wrap; padding: 10px; border-bottom: 1px solid black;">
+               <div class="information-column" style="flex: 1; padding: 10px;">
+                   <strong style="font-size: 20px">Sl No.:</strong>
+               </div>
+               <div class="information-column" style="flex: 2; padding: 10px;">
+                   <strong style="font-size: 20px">District:</strong>
+               </div>
+               <div class="information-column" style="flex: 3; padding: 10px;">
+                   <strong style="font-size: 20px">Name of Officer:</strong>
+               </div>
+               <div class="information-column" style="flex: 2; padding: 10px;">
+                   <strong style="font-size: 20px">Designation:</strong>
+               </div>
+               <div class="information-column" style="flex: 2; padding: 10px;">
+                   <strong style="font-size: 20px">Contact No.:</strong>
+               </div>
+           </div>
             @foreach($officers as $officer)
                 <div class="information-row" style="display: flex; flex-wrap: wrap; padding: 10px; border-bottom: 1px solid black;">
                     <div class="information-column" style="flex: 1; padding: 10px;">
-                        <strong>Sl No.:</strong> {{ $officer->id }}
+                        <strong>{{ $officer->id }}</strong>
                     </div>
                     <div class="information-column" style="flex: 2; padding: 10px;">
-                        <strong>District:</strong> {{ $officer->district }}
+                        <strong>{{ $officer->district }}</strong>
                     </div>
                     <div class="information-column" style="flex: 3; padding: 10px;">
-                        <strong>Name of Officer:</strong> {{ $officer->name }}
+                        <strong>{{ $officer->name }}</strong>
                     </div>
                     <div class="information-column" style="flex: 2; padding: 10px;">
-                        <strong>Designation:</strong> {{ $officer->designation}}
+                        <strong>{{ $officer->designation}}</strong>
                     </div>
                     <div class="information-column" style="flex: 2; padding: 10px;">
-                        <strong>Contact No.:</strong> {{ $officer->contact_number}}
+                        <strong>{{ $officer->contact_number}}</strong>
                     </div>
                 </div>
             @endforeach

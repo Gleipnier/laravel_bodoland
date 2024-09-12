@@ -8,6 +8,7 @@ use App\Models\User;
 use App\Models\Information;
 use App\Models\Documents;
 use App\Models\SportsOfficer;
+use App\Models\LatestUpdate;
 
 use Illuminate\Support\Facades\Auth;
 class HomeController extends Controller
@@ -40,9 +41,9 @@ class HomeController extends Controller
 
     public function homepage()
     {
-        
+        $latestUpdates = LatestUpdate::all();
         $services = Service::all();
-        return view('home.homepage', compact('services'));
+        return view('home.homepage', compact('services', 'latestUpdates'));
     }
 
     // public function showInformation() {

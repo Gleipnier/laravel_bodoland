@@ -1,3 +1,44 @@
+<div class="services_section layout_padding" style="padding-top: 120px">
+   <div class="latest-container">
+      <div class="latest-section" style="padding-left: 50px">
+         <h2>How do I?</h2>
+         <ul>
+             <li>
+                 <a href="https://example.com" target="_blank">Apply for Financial Assistance</a>
+             </li>
+             <li>
+                 <a href="https://example.com" target="_blank">Apply for Sports Equipments</a>
+             </li>
+             <li>
+                 <a href="https://example.com" target="_blank">Apply for Sports Certificates</a>
+             </li>
+             <!-- Add more list items as needed -->
+         </ul>
+     </div>
+     <div class="latest-section" style="padding-right: 50px">
+         <h2>SUSTAINABLE DEVELOPMENT GOALS</h2>
+         <ul>
+             <li>
+                 <span class="new-tag">NEW</span>
+                 <a href="https://example.com" target="_blank">RTI</a>
+             </li>
+             <li>
+                 <a href="https://example.com" target="_blank">Tenders</a>
+             </li>
+             <li>
+                 <a href="https://example.com" target="_blank">Media Gallery</a>
+             </li>
+             <li>
+                 <a href="https://example.com" target="_blank">Fit India Freedom Run 2.0</a>
+             </li>
+             <li>
+                 <a href="https://example.com" target="_blank">Fit India Fitness Protocol</a>
+             </li>
+             <!-- Add more list items as needed -->
+         </ul>
+     </div>
+   </div>
+</div>
 <div class="client_section layout_padding">
          <div class="container">
         
@@ -25,8 +66,7 @@
                   <a class="link mt-2" href="/"><h3>Financial Assistance</h3></a>
                </div>
             </div>
-    
-</div>
+         </div>
             <h1 class="client_taital">Recent Notifications</h1>
             <div class="client_section_2">
                <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">

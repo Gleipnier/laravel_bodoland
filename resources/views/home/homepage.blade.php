@@ -31,6 +31,7 @@
       <!-- footer section start -->
       @include('home.footer')  
       <!-- footer section end -->
+      
 
    </body>
 </html>

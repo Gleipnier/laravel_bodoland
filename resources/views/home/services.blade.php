@@ -20,64 +20,28 @@
         </div>
 
     </div>
-    
+</div>
 
     {{-- Latest Container Section --}}
 
+<div class="latest-info-container">
 
-    <div class="latest-container">
-        <div class="latest-section">
-            <h2>Latest Updates</h2>
-            <ul>
+    <div class="latest-section">
+        <h1>Latest Updates</h1>
+        <div class="latest-update-box">
+        <ul>
+            @foreach($latestUpdates as $update)
                 <li>
-                    <span class="new-tag">NEW</span>
-                    <a href="downloads/kanakeswarGovFile.pdf" download>Book Ticket To DURANDCUP</a>
-                    <div class="latest-date">2024-09-01</div>
+                    @if($update->is_new)
+                        <span class="new-tag">NEW</span>
+                    @endif
+                    <h2><a href="{{ $update->link }}" download>{{ $update->title }}</a></h2>
+                    <div class="latest-date">{{ $update->date }}</div>
                 </li>
-                <li>
-                    <a href="downloads/file2.pdf" download>Update Title 2</a>
-                    <div class="latest-date">2024-09-01</div>
-                </li>
-                <!-- Add more list items as needed -->
-            </ul>
+            @endforeach
+        </ul>
         </div>
-        <div class="latest-section">
-            <h2>How do I?</h2>
-            <ul>
-                <li>
-                    <a href="https://example.com" target="_blank">Apply for Financial Assistance</a>
-                </li>
-                <li>
-                    <a href="https://example.com" target="_blank">Apply for Sports Equipments</a>
-                </li>
-                <li>
-                    <a href="https://example.com" target="_blank">Apply for Sports Certificates</a>
-                </li>
-                <!-- Add more list items as needed -->
-            </ul>
-        </div>
-        <div class="latest-section">
-            <h2>SUSTAINABLE DEVELOPMENT GOALS</h2>
-            <ul>
-                <li>
-                    <span class="new-tag">NEW</span>
-                    <a href="https://example.com" target="_blank">RTI</a>
-                </li>
-                <li>
-                    <a href="https://example.com" target="_blank">Tenders</a>
-                </li>
-                <li>
-                    <a href="https://example.com" target="_blank">Media Gallery</a>
-                </li>
-                <li>
-                    <a href="https://example.com" target="_blank">Fit India Freedom Run 2.0</a>
-                </li>
-                <li>
-                    <a href="https://example.com" target="_blank">Fit India Fitness Protocol</a>
-                </li>
-                <!-- Add more list items as needed -->
-            </ul>
-        </div>
-    </div>
+     </div>
+
 </div>
 

@@ -32,7 +32,7 @@
                  <div class="about_taital_main">
                     <h2 class="about_taital">Sports Authority Of India</h2>
                     <p class="about_text"> </p>
-                    <div class="readmore_bt"><a href="https://sportsauthorityofindia.nic.in/sai/"target="_blank">Official Website</a></div>
+                    <div class="readmore_bt"><a href="https://sportsauthorityofindia.nic.in/sai/"target="_blank">Website</a></div>
                  </div>
                  
               </div>

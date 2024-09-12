@@ -10,13 +10,11 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\PostController;
 use App\Http\Controllers\AdminController;
-use App\Http\Controllers\HowDoIController;
 use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\ServiceController;
 use App\Http\Controllers\OfficersController;
 use App\Http\Controllers\InformationController;
 use App\Http\Controllers\LatestUpdateController;
-use App\Http\Controllers\SustainableDevelopmentGoalController;
 
 /*
 |--------------------------------------------------------------------------
@@ -57,8 +55,9 @@ Route::get('/contact', function () {
 })->name('contact');
 
 Route::get('/homepage', function () {
+    $latestUpdates = LatestUpdate::all();
     $services = Service::all();
-    return view('home.homepage', compact('services'));
+    return view('home.homepage', compact('services', 'latestUpdates'));
 })->name('homepage');
 
 Route::get('/organizations', function () {
@@ -122,6 +121,10 @@ Route::get('/indexinformation', [InformationController::class, 'index'])->middle
 
 Route::get('/indexofficers', [OfficersController::class, 'index'])->middleware(['auth', 'verified'])->name('posts.indexofficers');
 
+//Updates View
+
+Route::get('/admin.index', [LatestUpdateController::class, 'index'])->middleware(['auth', 'verified'])->name('admin.latest-updates.index');
+
 
 Route::middleware('auth')->group(function () {
     Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
@@ -148,6 +151,5 @@ Route::resource('services', ServiceController::class);
 
 Route::prefix('admin')->middleware(['auth', 'admin'])->group(function () {
     Route::resource('latest-updates', LatestUpdateController::class);
-    Route::resource('how-do-i', HowDoIController::class);
-    Route::resource('sustainable-development-goals', SustainableDevelopmentGoalController::class);
+
 });

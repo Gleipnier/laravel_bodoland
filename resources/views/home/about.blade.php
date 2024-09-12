@@ -1,3 +1,6 @@
+<div class="about_section layout_padding" style="padding-bottom: 30px">
+</div>
+
 <div class="about_section layout_padding">
          <div class="container-fluid">
             <div class="row">
@@ -12,7 +15,7 @@
                      <div class="readmore_bt"><a href="downloads/CEM Message.pdf" download>Download</a></div>
                   </div>
                </div>
-               <div class="col-md-6 padding_right_0">
+               <div class="col-md-6 padding_right_0" style="padding-left: 50px">
                   <div><img src="images/CEMofBTR.jpeg"  class="about_img"></div>
                </div>
             </div>

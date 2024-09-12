@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\LatestUpdate;
 use Illuminate\Http\Request;
 
 class LatestUpdateController extends Controller
@@ -11,7 +12,8 @@ class LatestUpdateController extends Controller
      */
     public function index()
     {
-        //
+        $updates = LatestUpdate::all();
+        return view('admin.latest-updates.index', compact('updates'));
     }
 
     /**
@@ -19,15 +21,23 @@ class LatestUpdateController extends Controller
      */
     public function create()
     {
-        //
-    }
+        return view('admin.latest-updates.create');    }
 
     /**
      * Store a newly created resource in storage.
      */
     public function store(Request $request)
     {
-        //
+        $validatedData = $request->validate([
+            'title' => 'required|max:255',
+            'link' => 'required|url',
+            'date' => 'required|date',
+            'is_new' => 'boolean',
+        ]);
+    
+        LatestUpdate::create($validatedData);
+    
+        return redirect()->route('admin.latest-updates.index')->with('success', 'Update created successfully');
     }
 
     /**
@@ -41,24 +51,29 @@ class LatestUpdateController extends Controller
     /**
      * Show the form for editing the specified resource.
      */
-    public function edit(string $id)
+    public function edit(LatestUpdate $latestUpdate)
     {
-        //
+        return view('admin.latest-updates.edit', compact('latestUpdate'));
     }
 
-    /**
-     * Update the specified resource in storage.
-     */
-    public function update(Request $request, string $id)
+    public function update(Request $request, LatestUpdate $latestUpdate)
     {
-        //
+        $validatedData = $request->validate([
+            'title' => 'required|max:255',
+            'link' => 'required|url',
+            'date' => 'required|date',
+            'is_new' => 'boolean',
+        ]);
+
+        $latestUpdate->update($validatedData);
+
+        return redirect()->route('latest-updates.index')->with('success', 'Update modified successfully');
     }
 
-    /**
-     * Remove the specified resource from storage.
-     */
-    public function destroy(string $id)
+    public function destroy(LatestUpdate $latestUpdate)
     {
-        //
+        $latestUpdate->delete();
+
+        return redirect()->route('latest-updates.index')->with('success', 'Update deleted successfully');
     }
 }
