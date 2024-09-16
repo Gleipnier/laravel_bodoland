@@ -78,7 +78,9 @@
                      <li><a href="{{ route('contact') }}">Contact</a></li>
                      @if (Route::has('login'))
                      @auth
-                     <li><x-app-layout></x-app-layout></li>
+                     <li>
+                        <strong><a href="{{route('dashboard')}}">Dashboard</a></strong>
+                     </li>
 
                      @else
                      <li><a href="{{route('login')}}">LogIn</a></li>

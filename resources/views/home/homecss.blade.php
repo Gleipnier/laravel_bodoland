@@ -28,7 +28,8 @@
       <link rel="stylesheet" href="css/owl.theme.default.min.css">
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css" media="screen">
       <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
-      <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+      {{-- <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script> --}}
+      <link rel="stylesheet" href="css/swiper.min.css">
       <script>
             document.querySelectorAll(".dream img").forEach(image=>{
                   image.onclick=()=>{
@@ -45,5 +46,5 @@
 
       <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
       <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
-      <script type="text/javascript" src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-      <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+      {{-- <script type="text/javascript" src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+      <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script> --}}

@@ -15,7 +15,7 @@
                      <div class="readmore_bt"><a href="downloads/CEM Message.pdf" download>Download</a></div>
                   </div>
                </div>
-               <div class="col-md-6 padding_right_0" style="padding-left: 50px">
+               <div class="col-md-6 padding_right_0" style="padding-left: 55px; padding-top: 70px">
                   <div><img src="images/CEMofBTR.jpeg"  class="about_img"></div>
                </div>
             </div>

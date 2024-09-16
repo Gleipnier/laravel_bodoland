@@ -1,4 +1,81 @@
-<div class="services_section layout_padding" style="padding-top: 120px">
+<style>
+   
+   .swiper-container {
+    position: relative;
+    padding: 0 60px 50px; /* Increased bottom padding for pagination */
+    max-width: 1200px;
+    margin: 0 auto;
+   }
+   .swiper {
+       width: 100%;
+       max-width: 1200px;
+       height: auto;
+       margin: 0 auto;
+       padding: 20px 0;
+   }
+   .swiper-slide {
+       background: #fff;
+       border-radius: 8px;
+       box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+       padding: 0;
+       text-align: center;
+       display: flex;
+       flex-direction: column;
+       height: auto;
+   }
+   .service-image {
+       width: 100%;
+       height: 200px;
+       object-fit: contain;
+       border-top-left-radius: 8px;
+       border-top-right-radius: 8px;
+   }
+   .service-content {
+       padding: 20px;
+       display: flex;
+       flex-direction: column;
+       justify-content: space-between;
+   }
+   .service-title {
+       font-size: 20px;
+       font-weight: bold;
+       margin-bottom: 10px;
+       color: #333;
+   }
+   .service-description {
+       font-size: 14px;
+       color: #666;
+       margin-bottom: 15px;
+   }
+   .view-details {
+       display: inline-block;
+       background: #ff1493;
+       color: white;
+       padding: 8px 16px;
+       text-decoration: none;
+       border-radius: 5px;
+       font-weight: bold;
+       font-size: 14px;
+       align-self: center;
+   }
+   .swiper-button-next, .swiper-button-prev {
+       color: #ff1493;
+   }
+   .swiper-pagination {
+      position: absolute;
+      bottom: 10px;
+      left: 0;
+      right: 0;
+   }
+   .swiper-pagination-bullet-active {
+       background-color: #ff1493;
+   }
+
+</style>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+{{-- <div class="services_section layout_padding" style="padding-top: 120px">
    <div class="latest-container">
       <div class="latest-section" style="padding-left: 50px">
          <h2>How do I?</h2>
@@ -38,34 +115,56 @@
          </ul>
      </div>
    </div>
-</div>
-<div class="client_section layout_padding">
+</div> --}}
+<div class="client_section layout_padding" style="padding-top: 120px">
          <div class="container">
         
          <div class="banner_section layout_padding">
 
-            <div class="game-event d-flex justify-content-center align-items-center flex-wrap">
-               <div class="event">
-                  <img src="images/financeasisst.png" alt="Finance">
-                  <h3></h3>
-                  <a class="link mt-2" href="/"><h3>Financial Assistance</h3></a>
+
+
+            <div class="swiper">
+               <div class="swiper-wrapper">
+                 <div class="swiper-slide">
+                   <img src="images/financeasisst.png" alt="financeasisst" class="service-image">
+                   <div class="service-content">
+                       <a href="#"><div class="service-title">Finance Assistance</div></a>
+                       
+                       {{-- <a href="#" class="view-details">View Details</a> --}}
+                   </div>
+                 </div>
+                 <div class="swiper-slide">
+                   <img src="images/sportsacademy.png" alt="Sports Academy" class="service-image">
+                   <div class="service-content">
+                       <a href="#"><div class="service-title">Sports Academy</div></a>
+                       
+                       {{-- <a href="#" class="view-details">View Details</a> --}}
+                   </div>
+                 </div>
+                 <div class="swiper-slide">
+                   <img src="images/kheloindia.png" alt="kheloindia" class="service-image">
+                   <div class="service-content">
+                       <a href="#"><div class="service-title">Khelo India</div></a>
+                       
+                       {{-- <a href="#" class="view-details">View Details</a> --}}
+                   </div>
+                 </div>
+                 <div class="swiper-slide">
+                   <img src="images/statelevelcommittee.png" alt="statelevelcommittee" class="service-image">
+                   <div class="service-content">
+                       <a href="#"><div class="service-title">State Level Committee</div></a>
+                       
+                       {{-- <a href="#" class="view-details">State Level Committee</a> --}}
+                   </div>
+                 </div>
                </div>
-               <div class="event">
-                  <img src="images/sportsacademy.png" alt="Sports Academy">
-                  <h3></h3>
-                  <a class="link mt-2" href="/"><h3>Financial Assistance</h3></a>
-               </div>
-               <div class="event">
-                  <img src="images/kheloindia.png" alt="Khelo">
-                  <h3></h3>
-                  <a class="link mt-2" href="/"><h3>Financial Assistance</h3></a>
-               </div>
-               <div class="event">
-                  <img src="images/statelevelcommittee.png" alt="State Level">
-                  <h3></h3>
-                  <a class="link mt-2" href="/"><h3>Financial Assistance</h3></a>
-               </div>
-            </div>
+               <div class="swiper-pagination"></div>
+               <div class="swiper-button-prev"></div>
+               <div class="swiper-button-next"></div>
+           </div>  
+
+         {{-- Notifications Section --}}
+
          </div>
             <h1 class="client_taital">Recent Notifications</h1>
             <div class="client_section_2">
@@ -151,3 +250,38 @@
             
          </div>
       </div>
+
+
+
+      <script type="module">
+         import Swiper from "https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.mjs";
+         const swiper = new Swiper(".swiper", {
+           direction: "horizontal",
+           loop: true,
+           slidesPerView: 4,
+           spaceBetween: 20,
+           pagination: {
+             el: '.swiper-pagination',
+             clickable: true,
+             type: 'bullets',
+           },
+           navigation: {
+             nextEl: ".swiper-button-next",
+             prevEl: ".swiper-button-prev",
+           },
+           breakpoints: {
+             320: {
+               slidesPerView: 1,
+               spaceBetween: 10
+             },
+             768: {
+               slidesPerView: 2,
+               spaceBetween: 15
+             },
+             1024: {
+               slidesPerView: 4,
+               spaceBetween: 20
+             }
+           }
+         });
+         </script>

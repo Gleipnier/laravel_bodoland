@@ -16,26 +16,13 @@ class ServicesSeeder extends Seeder
     {
         db::table('services')->insert([
             [
-                'title' => 'Services',
-                'description' => 'Sports Tournament',
-                'image_path' => 'images/coach.jpg',  // File path of the uploaded document
+                'title' => 'Services Extra',
+                'description' => 'Description',
+                'image_path' => 'images/gov1.jpg',  // File path of the uploaded document
                 'created_at' => now(),
                 'updated_at' => now(),
             ],
-            [
-                'title' => 'Services',
-                'description' => 'Personal Coaching',
-                'image_path' => 'images/soccer-coach-post.png',  // File path of the uploaded document
-                'created_at' => now(),
-                'updated_at' => now(),
-            ],
-            [
-                'title' => 'Services',
-                'description' => 'Team Coaching',
-                'image_path' => 'images/sports.png',  // File path of the uploaded document
-                'created_at' => now(),
-                'updated_at' => now(),
-            ],
+
             
         ]);
     }

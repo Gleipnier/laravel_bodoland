@@ -133,10 +133,20 @@
     .mean-container .mean-nav ul li a.mean-expand {
         top: 0;
     }
+    .readmore_bt{
+        float: none;
+        margin: auto;
+        padding-top: 20px;
+    }
 }
 
 @media (min-width: 992px) and (max-width: 1199px) {
 
+    .readmore_bt{
+        float: none;
+        margin: auto;
+        padding-top: 20px;
+    }
     .banner_text {
         width: 100%;
     }
@@ -144,12 +154,19 @@
         padding-left: 25px;
         padding-top: 40px;
     }
+    .about_taital {
+        padding-left: 25px;
+        padding-top: 20px;
+        font-size: 20px;
+    }
     .about_text {
         padding-top: 0px;
         font-size: 14px;
     }
-    .readmore_bt {
-        margin-top: 30px;
+    .readmore_bt{
+        float: none;
+        margin: auto;
+        padding-top: 20px;
     }
     .blog_section {
         background-size: 100% 100%;
@@ -204,6 +221,11 @@
 
 @media (min-width: 768px) and (max-width: 991px) {
 
+    .readmore_bt{
+        float: none;
+        margin: auto;
+        padding-top: 20px;
+    }
     .banner_text {
         width: 100%;
     }
@@ -211,12 +233,19 @@
         padding-left: 25px;
         padding-top: 0px;
     }
+    .about_taital {
+        padding-left: 25px;
+        padding-top: 20px;
+        font-size: 20px;
+    }
     .about_text {
         padding-top: 0px;
         font-size: 14px;
     }
-    .readmore_bt {
-        margin-top: 30px;
+    .readmore_bt{
+        float: none;
+        margin: auto;
+        padding-top: 20px;
     }
     .about_img {
         height: 340px;
@@ -273,7 +302,11 @@
 }
 
 @media (min-width: 576px) and (max-width: 767px) {
-    
+    .readmore_bt{
+        float: none;
+        margin: auto;
+        padding-top: 20px;
+    }
 .officer-container {
     width: 80%;
     /* margin: 0 auto; */
@@ -382,6 +415,11 @@
         padding-top: 0px;
         padding-left: 0px;
     }
+    .about_taital {
+        padding-left: 25px;
+        padding-top: 20px;
+        font-size: 20px;
+    }
     .about_text {
         font-size: 15px;
     }
@@ -488,6 +526,11 @@
 }
 
 @media (max-width: 575px) {
+    .readmore_bt{
+        float: none;
+        margin: auto;
+        padding-top: 20px;
+    }
     .navbar-light .navbar-toggler {
         color: rgba(0, 0, 0, .5);
         border-color: transparent;
@@ -582,6 +625,11 @@
     .about_taital_main {
         padding-top: 0px;
         padding-left: 0px;
+    }
+    .about_taital {
+        padding-left: 25px;
+        padding-top: 20px;
+        font-size: 20px;
     }
     .about_text {
         font-size: 15px;
@@ -689,6 +737,11 @@
 
 }
 @media (max-width:760){
+    .readmore_bt{
+        float: none;
+        margin: auto;
+        padding-top: 20px;
+    }
     .officer-container {
         width: 80%;
         /* margin: 0 auto; */
