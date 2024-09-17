@@ -23,6 +23,7 @@
        flex-direction: column;
        height: auto;
    }
+  
    .service-image {
        width: 100%;
        height: 200px;
@@ -70,7 +71,9 @@
    .swiper-pagination-bullet-active {
        background-color: #ff1493;
    }
-
+   .swiper-wrapper {
+      padding-bottom: 42px;
+   }
 </style>
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
 <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>

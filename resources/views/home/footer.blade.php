@@ -18,8 +18,9 @@
       <div class="copyright_section">
          
          <div class="container">
-            <p class="copyright_text">Content Ownership Directorate of Sports & Youth Welfare, Govt. of BTR. </p>
+            
             <div class="social_icon">
+               <p class="copyright_text">Content Ownership Directorate of Sports & Youth Welfare, Govt. of BTR. </p>
                <ul>
                   <li><a href="#"><img src="images/fb-icon.png"></a></li>
                   <li><a href="#"><img src="images/twitter-icon.png"></a></li>

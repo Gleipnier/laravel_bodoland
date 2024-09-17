@@ -82,9 +82,7 @@ Route::get('/testing', function () {
     return view('pages.testing');
 })->name('testing');
 
-Route::get('/profile', function () {
-    return view('admin.dashboard');
-})->name('profile');
+
 
 
 

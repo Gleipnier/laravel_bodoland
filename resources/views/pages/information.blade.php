@@ -43,16 +43,16 @@
             </div>
             @foreach($information as $info)
                 <div class="information-row" style="display: flex; flex-wrap: wrap; padding: 10px; border-bottom: 1px solid black;">
-                    <div class="information-column" style="flex: 1; padding: 10px;">
+                    <div class="information-column" style="flex: 1; padding: 10px; color:#36454F;">
                         {{ $info->id }}
                     </div>
-                    <div class="information-column" style="flex: 2; padding: 10px;">
+                    <div class="information-column" style="flex: 2; padding: 10px; color:#36454F;">
                         {{ $info->title }}
                     </div>
-                    <div class="information-column" style="flex: 3; padding: 10px;">
+                    <div class="information-column" style="flex: 3; padding: 10px; color:#36454F;">
                        {{ $info->description }}
                     </div>
-                    <div class="information-column" style="flex: 2; padding: 10px;">
+                    <div class="information-column" style="flex: 2; padding: 10px; color:#36454F;">
                         {{ \Carbon\Carbon::parse($info->created_at)->format('Y-m-d')}}
                     </div>
                     <div class="information-column" style="flex: 1; padding: 10px;">

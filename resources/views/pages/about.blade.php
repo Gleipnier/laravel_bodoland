@@ -27,7 +27,7 @@
            <div class="row">
               <div class="col-md-6">
                  <div class="about_taital_main">
-                    <h2 class="about_taital">Mission</h2>
+                    <h1>Mission</h1>
                     <p class="about_text">To fulfill the designed vision of the Department in a pragmatic manner, a definite and constructive mission is the pivotal way. Sports and infrastructure are the most closely associated aspects that play a crucial role in enhancing any sports persons performance to a higher level of achievement. The department emphasizes on ensuring a pragmatic approach towards structured mission, promotion of competitive sports, physical activity, a healthy lifestyle, state of art sports infrastructure, sports coaching and training and sports related activities. The Department is also committed with a mission to reach every nook and corner of the BTR to identify budding sports talent in different sports disciplines. Further, our mission is to promote and develop sports performances at State, National and International level competitions along with health awareness and improving quality of life which is the core mission of Sports & Youth Welfare Department, BTC, Kokrajhar. </p>
                     <!-- <div class="readmore_bt"><a href="#">Read More</a></div> -->
                  </div>
@@ -45,13 +45,13 @@
            <div class="row">
               <div class="col-md-6">
                  <div class="about_taital_main">
-                    <h2 class="about_taital">Vision</h2>
+                    <h1>Vision</h1>
                     <p class="about_text">The vision of Sports & Youth Welfare Department is to bring about social transformation by promoting sports and spreading awareness of sports across different sections of the society, resulting in character building and inclusive development. It focuses on the all-round development of body, mind and health of the youth and common citizen of the BTR. An individual self-esteem, confidence and ability to deal with stress effectively is one of the major building blocks of a community and nation and therefore, the Department of Sports & Youth Welfare emphasizes on identifying and nurturing sporting talent in Bodoland giving them the opportunity to shine and excel in the global sports arena by creating a sports centric ecosystem. </p>
                  </div>
                  
               </div>
               <div class="col-md-6 padding_right_0">
-                 <div><img src="images/gov9.jpg" class="about_img" style="padding-top: 120px; padding-left:20px;"></div>
+                 <div><img src="images/gov9.jpg" class="about_img" style="padding-top: 120px; padding-left:20px; height: 420px; width: 590px;"></div>
               </div>
            </div>
         </div>
@@ -93,8 +93,8 @@
         </div>
      </div>
       <!-- about section end -->
-      <h1 style="padding-left: 6rem">OUR DIVISIONS/FIELD OFFICES</h1>
-      <p style="padding-left:5rem">NAME & CONTACT NUMBER OF DISTRICT SPORTS OFFICERS AND SUB-ORDINATE OFFICERS UNDER SPORTS & YOUTH WELFARE DEPTT. BTC, KOKRAJHAR.</p>
+      <h1 style="text-align: center;">OUR DIVISIONS/FIELD OFFICES</h1>
+      <p style="text-align: center;">NAME & CONTACT NUMBER OF DISTRICT SPORTS OFFICERS AND SUB-ORDINATE OFFICERS UNDER SPORTS & YOUTH WELFARE DEPTT. BTC, KOKRAJHAR.</p>
       <div class="officer-container" style="background-color: cornsilk;">
 
          <div class="information-container">

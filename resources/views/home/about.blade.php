@@ -4,7 +4,7 @@
 <div class="about_section layout_padding">
          <div class="container-fluid">
             <div class="row">
-               <div class="col-md-6">
+               <div class="col-md-6" style="padding-right:20px;">
                   <div class="about_taital_main">
                      <h1 class="about_taital">&nbsp; &nbsp; &nbsp;Honorable CEM of BTR</h1>
                      <h3 class="about_taital">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Pramod Boro</h3>
@@ -15,7 +15,7 @@
                      <div class="readmore_bt"><a href="downloads/CEM Message.pdf" download>Download</a></div>
                   </div>
                </div>
-               <div class="col-md-6 padding_right_0" style="padding-left: 55px; padding-top: 70px">
+               <div class="col-md-6 padding_right_0" style="padding-top: 70px">
                   <div><img src="images/CEMofBTR.jpeg"  class="about_img"></div>
                </div>
             </div>

@@ -69,7 +69,7 @@
                   </div>
                   <ul>
                      
-                     <li class="active"><a href="{{ route('homepage') }}">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Home</a></li>
+                     <li class="active"><a href="{{ route('homepage') }}">Home</a></li>
                      <li><a href="{{ route('organizations') }}">Organizations</a></li>
                      <li><a href="{{ route('information') }}">Information</a></li>
                      <li><a href="{{ route('documents') }}">Documents</a></li>

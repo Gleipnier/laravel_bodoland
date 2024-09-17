@@ -157,11 +157,12 @@
     .about_taital {
         padding-left: 25px;
         padding-top: 20px;
-        font-size: 20px;
+        
     }
     .about_text {
         padding-top: 0px;
-        font-size: 14px;
+        font-size: 0.875rem;
+        padding-bottom: 22px;
     }
     .readmore_bt{
         float: none;
@@ -236,11 +237,13 @@
     .about_taital {
         padding-left: 25px;
         padding-top: 20px;
-        font-size: 20px;
+        /* font-size: 20px; */
     }
     .about_text {
         padding-top: 0px;
-        font-size: 14px;
+        font-size: 0.875rem;
+        padding-bottom: 22px;
+
     }
     .readmore_bt{
         float: none;
@@ -249,6 +252,7 @@
     }
     .about_img {
         height: 340px;
+        width: auto;
     }
     .blog_section {
         background-size: 100% 100%;
@@ -418,13 +422,16 @@
     .about_taital {
         padding-left: 25px;
         padding-top: 20px;
-        font-size: 20px;
+        /* font-size: 20px; */
     }
     .about_text {
-        font-size: 15px;
+        font-size: 0.875rem;
+        padding-bottom: 22px;
+
     }
     .about_img {
-        padding-top: 30px;
+        height: auto; 
+        width: 590px;
     }
     .padding_right_0 {
         padding-right: 15px;
@@ -455,7 +462,7 @@
     }
     .lorem_text {
         padding: 30px 10px;
-        font-size: 15px;
+        /* font-size: 15px; */
     }
     .box_right {
         width: 100%;
@@ -467,20 +474,20 @@
         padding-left: 20px;
     }
     .choose_taital {
-        font-size: 30px;
+        /* font-size: 30px; */
     }
     .choose_section {
         padding: 50px 0px;
     }
     .choose_text {
         width: 100%;
-        font-size: 15px;
+        /* font-size: 15px; */
     }
     .newsletter_box {
         display: initial;
     }
     .let_text {
-        font-size: 30px;
+        /* font-size: 30px; */
         text-align: center;
     }
     .getquote_bt {
@@ -517,7 +524,7 @@
         display: inline-block;
     }
     .contact_taital {
-        font-size: 30px;
+        /* font-size: 30px; */
     }
     .email_text {
         width: 100%;
@@ -565,7 +572,7 @@
         display: initial;
     }
     .banner_taital {
-        font-size: 50px;
+        /* font-size: 50px; */
     }
     .bg-light {
         background-color: transparent !important;
@@ -632,10 +639,13 @@
         font-size: 20px;
     }
     .about_text {
-        font-size: 15px;
+        font-size: 0.875rem;
+        padding-bottom: 22px;
+
     }
     .about_img {
-        padding-top: 30px;
+        height: auto; 
+        width: 590px;
     }
     .padding_right_0 {
         padding-right: 15px;
@@ -666,7 +676,7 @@
     }
     .lorem_text {
         padding: 30px 10px;
-        font-size: 15px;
+        /* font-size: 15px; */
     }
     .box_right {
         width: 100%;
@@ -685,13 +695,13 @@
     }
     .choose_text {
         width: 100%;
-        font-size: 15px;
+        /* font-size: 15px; */
     }
     .newsletter_box {
         display: initial;
     }
     .let_text {
-        font-size: 30px;
+        /* font-size: 30px; */
         text-align: center;
     }
     .getquote_bt {
@@ -728,7 +738,7 @@
         display: inline-block;
     }
     .contact_taital {
-        font-size: 28px;
+        font-size: 1.75rem;
     }
     .email_text {
         width: 100%;
