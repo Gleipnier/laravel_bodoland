@@ -34,7 +34,8 @@ class LatestUpdateController extends Controller
             'date' => 'required|date',
             'is_new' => 'boolean',
         ]);
-    
+        // dd($request->all());
+        
         LatestUpdate::create($validatedData);
     
         return redirect()->route('admin.latest-updates.index')->with('success', 'Update created successfully');
@@ -64,7 +65,7 @@ class LatestUpdateController extends Controller
             'date' => 'required|date',
             'is_new' => 'boolean',
         ]);
-
+        
         $latestUpdate->update($validatedData);
 
         return redirect()->route('latest-updates.index')->with('success', 'Update modified successfully');
