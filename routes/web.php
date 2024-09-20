@@ -15,6 +15,7 @@ use App\Http\Controllers\ServiceController;
 use App\Http\Controllers\OfficersController;
 use App\Http\Controllers\InformationController;
 use App\Http\Controllers\LatestUpdateController;
+use App\Http\Controllers\LibraryCatalogueController;
 
 /*
 |--------------------------------------------------------------------------
@@ -156,3 +157,16 @@ Route::prefix('admin')->middleware(['auth', 'admin'])->group(function () {
     Route::resource('latest-updates', LatestUpdateController::class);
 
 });
+
+
+//Books section
+
+Route::get('/bookhome', [LibraryCatalogueController::class, 'home'])->name('bookhome');
+Route::get('/books', [LibraryCatalogueController::class, 'books'])->name('books');
+Route::get('/journals', [LibraryCatalogueController::class, 'journals'])->name('journals');
+Route::get('/eresources', [LibraryCatalogueController::class, 'eresources'])->name('eresources');
+
+//cicular test
+
+Route::get('/books-by-division', [LibraryCatalogueController::class, 'booksByDivision'])->name('books.division');
+Route::get('/books-by-subdivision/{subdivision}', [LibraryCatalogueController::class, 'booksBySubdivision'])->name('books.subdivision');

@@ -13,4 +13,9 @@ class Book extends Model
     {
         return $this->belongsTo(Library::class);
     }
+
+    public function subdivision()
+    {
+        return $this->belongsTo(Subdivision::class);
+    }
 }
