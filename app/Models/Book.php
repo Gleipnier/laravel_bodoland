@@ -7,7 +7,18 @@ use Illuminate\Database\Eloquent\Model;
 
 class Book extends Model
 {
-    protected $fillable = ['title', 'author', 'isbn', 'publication_year', 'genre', 'library_id'];
+    use HasFactory;
+
+    protected $fillable = [
+        'title',
+        'author',
+        'isbn',
+        'publication_year',
+        'genre',
+        'type',
+        'image_url',
+        'library_id',
+    ];
 
     public function library()
     {

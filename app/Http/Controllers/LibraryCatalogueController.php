@@ -12,18 +12,50 @@ class LibraryCatalogueController extends Controller
 {
     public function home()
 {
-    $recentBooks = Book::latest()->take(5)->get();
+    $recentBooks = Book::with('library')->latest()->take(5)->get();
     $recentJournals = Journal::latest()->take(5)->get();
     $recentEResources = EResource::latest()->take(5)->get();
     
     return view('library.bookhome', compact('recentBooks', 'recentJournals', 'recentEResources'));
 }
 
-public function books()
-{
-    $books = Book::with('library')->paginate(12);
-    return view('library.books', compact('books'));
-}
+public function books(Request $request)
+    {
+        $query = Book::query();
+
+        // Apply filters
+        if ($request->has('genre')) {
+            $query->where('genre', $request->genre);
+        }
+        if ($request->has('type')) {
+            $query->where('type', $request->type);
+        }
+
+        // Apply sorting
+        $sortBy = $request->input('sort', 'popularity');
+        switch ($sortBy) {
+            case 'title':
+                $query->orderBy('title');
+                break;
+            case 'author':
+                $query->orderBy('author');
+                break;
+            case 'year':
+                $query->orderBy('publication_year', 'desc');
+                break;
+            default:
+                // For popularity, you might need to implement a custom sorting mechanism
+                // This is just a placeholder using the 'id' field
+                $query->orderBy('id', 'desc');
+                break;
+        }
+
+        $books = $query->paginate(12);
+        $genres = Book::distinct('genre')->pluck('genre');
+
+        return view('library.books', compact('books', 'genres'));
+    }
+
 
 public function journals()
 {
