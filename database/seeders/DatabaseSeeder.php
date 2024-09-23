@@ -10,7 +10,11 @@ class DatabaseSeeder extends Seeder
 {
     public function run()
     {
-        $this->call(LibraryCatalogueSeeder::class);
+        $this->call([
+            BookServiceSeeder::class,
+            ResearchResourceSeeder::class,
+            EventNewsSeeder::class,
+        ]);
     }
 
 }

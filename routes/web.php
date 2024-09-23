@@ -13,9 +13,12 @@ use App\Http\Controllers\AdminController;
 use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\ServiceController;
 use App\Http\Controllers\OfficersController;
+use App\Http\Controllers\EventsNewsController;
 use App\Http\Controllers\InformationController;
+use App\Http\Controllers\BookServicesController;
 use App\Http\Controllers\LatestUpdateController;
 use App\Http\Controllers\LibraryCatalogueController;
+use App\Http\Controllers\ResearchLearningController;
 
 /*
 |--------------------------------------------------------------------------
@@ -165,6 +168,9 @@ Route::get('/bookhome', [LibraryCatalogueController::class, 'home'])->name('book
 Route::get('/books', [LibraryCatalogueController::class, 'books'])->name('books');
 Route::get('/journals', [LibraryCatalogueController::class, 'journals'])->name('journals');
 Route::get('/eresources', [LibraryCatalogueController::class, 'eresources'])->name('eresources');
+Route::get('/book-services', [BookServicesController::class, 'index'])->name('book-services');
+Route::get('/research-learning', [ResearchLearningController::class, 'index'])->name('research-learning');
+Route::get('/events-news', [EventsNewsController::class, 'index'])->name('events-news');
 
 //cicular test
 
