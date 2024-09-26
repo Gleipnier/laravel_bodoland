@@ -535,7 +535,7 @@
   margin-top: 10px;
 }
 
-.dropdown {
+.dropdowner {
   padding: 10px;
   border: 1px solid #ccc;
   border-radius: 4px;

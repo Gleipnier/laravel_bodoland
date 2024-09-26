@@ -21,7 +21,7 @@
     
             <label for="reason" class="form-label">Select the reason why you gave this score:</label>
             <div class="dropdowns">
-              <select id="reason" name="reason" class="dropdown">
+              <select id="reason" name="reason" class="dropdowner">
                 <option>Book Collection</option>
                 <option>Navigation</option>
                 <option>User Interface</option>

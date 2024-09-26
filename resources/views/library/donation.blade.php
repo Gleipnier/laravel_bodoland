@@ -204,14 +204,14 @@ button:hover {
             padding: 20px;
         }
         .volunteer-form-wrapper {
-        font-family: Arial, sans-serif;
         line-height: 1.6;
-        max-width: 600px;
+        max-width: 6000px;
         margin: 20px auto;
         padding: 20px;
         background: #fff;
         border-radius: 5px;
         box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        margin-top: 110px;
     }
     .volunteer-form-wrapper h2 {
         text-align: center;
@@ -384,7 +384,7 @@ button:hover {
 </section>
 
 <!-- Help Form Section -->
-<div id="volunteernow" class="volunteer-form-wrapper" style="margin-top: 110px">
+<div id="volunteernow" class="volunteer-form-wrapper">
   <h2>Volunteer Sign-up Form</h2>
   <form id="volunteerForm" class="volunteer-form">
       <div class="form-group">

@@ -261,21 +261,5 @@
          </div>
     </footer>
 </body>
-<script>
-    document.addEventListener("DOMContentLoaded", function() {
-    var dropdown = document.querySelector('li.has-dropdown');
-    var dropdownMenu = dropdown.querySelector('.dropdown');
 
-    // Detect touch devices
-    var isTouchDevice = 'ontouchstart' in window || navigator.maxTouchPoints > 0;
-
-    if (isTouchDevice) {
-        // For mobile: Toggle dropdown on click
-        dropdown.addEventListener('click', function(event) {
-            event.preventDefault(); // Prevent default behavior
-            dropdownMenu.classList.toggle('show'); // Toggle the 'show' class
-        });
-    }
-});
-</script>
 </html>

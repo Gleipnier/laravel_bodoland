@@ -69,7 +69,16 @@
             </div>
         </div>
     </div>
-
+    <div class="contact-container" style="margin-top: 9%; text-align: center;">
+        <h1 class="contact_taital">Contact Us</h1>
+        <div class="contact-sectional">
+           <p>Directorate of Sports & Youth Welfare<br>
+              Government of Bodoland Territorial Region,<br>
+              Titaguri, Kokrajhar, BTR (Assam) - 783370<br>
+              Email: :<a href="mailto:chdsportsbtc2019@gmail.com">chdsportsbtc2019@gmail.com</a>
+           </p>
+        </div> 
+    </div>
     <script>
     document.addEventListener('DOMContentLoaded', function() {
         const faqQuestions = document.querySelectorAll('.faq-question');

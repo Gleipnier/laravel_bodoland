@@ -1,12 +1,13 @@
 @extends('layouts.bookapp')
 @extends('layouts.bookcss')
 @section('title', 'Research & Learning')
+
 @section('content')
 
 
 
-
 <section class="team-section">
+
         <h1>WHO's WHO?</h1>
     
         <div class="team-container">
