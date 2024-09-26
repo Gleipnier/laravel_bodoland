@@ -126,7 +126,6 @@
             color: black;
             min-height: 70px;
             background-image: linear-gradient(to right, white, #faf0e6);
-
             border-radius: 22px;
         }
         header a {
@@ -180,6 +179,7 @@
             text-align: center;
             font-size: 1rem;
             margin-left: 0px;
+            padding-top: 22px;
         }
 
         .copyright_text a {

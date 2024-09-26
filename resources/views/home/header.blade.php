@@ -79,13 +79,14 @@
                      <li><a href="{{ route('about') }}">About</a></li>
                      <li><a href="{{ route('gallery') }}">Gallery</a></li>
                      <li><a href="{{ route('contact') }}">Contact</a></li>
-                     <li class="dropdown">
+                     <li><a href="{{ route('bookhome') }}">Library</a></li>
+                     {{-- <li class="dropdown">
                         <a href="#" class="dropdown-header">LIBRARY</a>
                         <ul class="dropdown-content">
                             <li><a href="{{ route('bookhome') }}">BookHome</a></li>
                             <li><a href="{{ route('books') }}">Archives</a></li>
                         </ul>
-                    </li>
+                    </li> --}}
                      @if (Route::has('login'))
                      @auth
                      <li>

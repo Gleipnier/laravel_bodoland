@@ -80,6 +80,14 @@ public function faq()
 {
     return view('library.faq');
 }
+public function policy()
+{
+    return view('library.policy');
+}
+public function donation()
+{
+    return view('library.donation');
+}
 public function booksByDivision()
 {
     $divisions = Division::with(['subdivisions' => function ($query) {

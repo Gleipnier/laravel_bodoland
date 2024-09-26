@@ -171,6 +171,8 @@ Route::get('/eresources', [LibraryCatalogueController::class, 'eresources'])->na
 Route::get('/feedback', [LibraryCatalogueController::class, 'feedback'])->name('feedback');
 Route::get('/bookstaff', [LibraryCatalogueController::class, 'bookstaff'])->name('bookstaff');
 Route::get('/faq', [LibraryCatalogueController::class, 'faq'])->name('faq');
+Route::get('/policy', [LibraryCatalogueController::class, 'policy'])->name('policy');
+Route::get('/donation', [LibraryCatalogueController::class, 'donation'])->name('donation');
 Route::get('/book-services', [BookServicesController::class, 'index'])->name('book-services');
 Route::get('/research-learning', [ResearchLearningController::class, 'index'])->name('research-learning');
 Route::get('/events-news', [EventsNewsController::class, 'index'])->name('events-news');
