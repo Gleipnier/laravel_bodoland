@@ -68,6 +68,18 @@ public function eresources()
     $eresources = EResource::paginate(12);
     return view('library.eresources', compact('eresources'));
 }
+public function feedback()
+{
+    return view('library.feedback');
+}
+public function bookstaff()
+{
+    return view('library.bookstaff');
+}
+public function faq()
+{
+    return view('library.faq');
+}
 public function booksByDivision()
 {
     $divisions = Division::with(['subdivisions' => function ($query) {

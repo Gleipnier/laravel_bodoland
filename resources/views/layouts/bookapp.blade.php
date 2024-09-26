@@ -10,7 +10,7 @@
             line-height: 1.6;
             margin: 0;
             padding: 0;
-            background-color: #f4f4f4;
+            background-color: #ffffff;
         }
         .container {
             width: 80%;
@@ -61,6 +61,50 @@
             color: #cccccc;
             font-weight: bold;
         }
+                
+        .copyright_section {
+        margin-top: 222px;
+        width: 100%;
+        float: left;
+        background-color: #122c2d;
+        height: auto;
+        }
+
+        .copyright_text {
+            width: 100%;
+            float: left;
+            color: #ffffff;
+            text-align: center;
+            font-size: 1rem;
+            margin-left: 0px;
+        }
+
+        .copyright_text a {
+            color: #ffffff;
+        }
+
+        .copyright_text a:hover {
+            color: #e27141;
+        }
+
+        .social_icon {
+            width: 100%;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        .social_icon ul {
+            margin: 0px;
+            padding: 0px;
+            display: inline-block;
+            text-align: center;
+        }
+
+        .social_icon li {
+            float: left;
+            padding: 30px 5px;
+        }
+
     </style>
 </head>
 <body>
@@ -86,6 +130,22 @@
     <div class="container">
         @yield('content')
     </div>
+    <footer>
+        <div class="copyright_section">
+         
+               
+               <div class="social_icon">
+                  <p class="copyright_text">Content Ownership Directorate of Sports & Youth Welfare, Govt. of BTR. </p>
+                  <ul>
+                     <li><a href="#"><img src="images/fb-icon.png"></a></li>
+                     <li><a href="#"><img src="images/twitter-icon.png"></a></li>
+                     <li><a href="#"><img src="images/linkedin-icon.png"></a></li>
+                     <li><a href="#"><img src="images/instagram-icon.png"></a></li>
+                  </ul>
+               </div>
+                
 
+         </div>
+    </footer>
 </body>
 </html>

@@ -13,6 +13,15 @@
 /*------------------------------------------------------------------- 767px x 599px ---------------------------------------------------------------------*/
 
 @media only screen and (min-width: 599px) and (max-width: 767px) {
+    .customer_text {
+        font-size: 1rem;
+
+    }
+    
+    .lorem_text {
+        font-size: 0.875rem;
+    }
+       
     .officer-container {
         width: 80%;
         /* margin: 0 auto; */
@@ -93,6 +102,14 @@
 /*------------------------------------------------------------------- 599px x 280px ---------------------------------------------------------------------*/
 
 @media only screen and (min-width: 280px) and (max-width: 599px) {
+    .customer_text {
+        font-size: 1rem;
+
+    }
+    
+    .lorem_text {
+        font-size: 0.875rem;
+    }
     .cart-content-right {
         padding-bottom: 5px;
     }
@@ -141,7 +158,14 @@
 }
 
 @media (min-width: 992px) and (max-width: 1199px) {
+    .customer_text {
+        font-size: 1rem;
 
+    }
+    
+    .lorem_text {
+        font-size: 0.875rem;
+    }
     .readmore_bt{
         float: none;
         margin: auto;
@@ -221,7 +245,26 @@
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
+    .services_taital {
+        font-size: 1.5rem;
+        text-align: center;
+        padding-left: 0%;
+        padding-top: 0px;
+    }
+    
+    .services_text {
+        font-size: 1rem;
+        text-align: center;
+        padding-left: 0%;
+    }
+    .customer_text {
+        font-size: 1rem;
 
+    }
+    
+    .lorem_text {
+        font-size: 0.875rem;
+    }
     .readmore_bt{
         float: none;
         margin: auto;
@@ -306,6 +349,26 @@
 }
 
 @media (min-width: 576px) and (max-width: 767px) {
+    .services_taital {
+        font-size: 1.5rem;
+        text-align: center;
+        padding-left: 0%;
+        padding-top: 0px;
+    }
+    
+    .services_text {
+        font-size: 1rem;
+        text-align: center;
+        padding-left: 0%;
+    }
+    .customer_text {
+        font-size: 1rem;
+
+    }
+    
+    .lorem_text {
+        font-size: 0.875rem;
+    }
     .readmore_bt{
         float: none;
         margin: auto;
@@ -533,6 +596,26 @@
 }
 
 @media (max-width: 575px) {
+    .services_taital {
+        font-size: 1.5rem;
+        text-align: center;
+        padding-left: 0%;
+        padding-top: 0px;
+    }
+    
+    .services_text {
+        font-size: 1rem;
+        text-align: center;
+        padding-left: 0%;
+    }
+    .customer_text {
+        font-size: 1rem;
+        
+    }
+    
+    .lorem_text {
+        font-size: 0.875rem;
+    }
     .readmore_bt{
         float: none;
         margin: auto;
@@ -747,6 +830,28 @@
 
 }
 @media (max-width:760){
+    
+    .services_taital {
+        font-size: 1.5rem;
+        text-align: center;
+        padding-left: 0%;
+        padding-top: 0px;
+    }
+    
+    .services_text {
+        font-size: 1rem;
+        text-align: center;
+        padding-left: 0%;
+    }
+    
+    .customer_text {
+        font-size: 1rem;
+
+    }
+    
+    .lorem_text {
+        font-size: 0.875rem;
+    }
     .readmore_bt{
         float: none;
         margin: auto;

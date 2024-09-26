@@ -168,6 +168,9 @@ Route::get('/bookhome', [LibraryCatalogueController::class, 'home'])->name('book
 Route::get('/books', [LibraryCatalogueController::class, 'books'])->name('books');
 Route::get('/journals', [LibraryCatalogueController::class, 'journals'])->name('journals');
 Route::get('/eresources', [LibraryCatalogueController::class, 'eresources'])->name('eresources');
+Route::get('/feedback', [LibraryCatalogueController::class, 'feedback'])->name('feedback');
+Route::get('/bookstaff', [LibraryCatalogueController::class, 'bookstaff'])->name('bookstaff');
+Route::get('/faq', [LibraryCatalogueController::class, 'faq'])->name('faq');
 Route::get('/book-services', [BookServicesController::class, 'index'])->name('book-services');
 Route::get('/research-learning', [ResearchLearningController::class, 'index'])->name('research-learning');
 Route::get('/events-news', [EventsNewsController::class, 'index'])->name('events-news');

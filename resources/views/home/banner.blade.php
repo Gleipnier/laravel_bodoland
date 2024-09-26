@@ -12,21 +12,21 @@
             <!-- First Slide -->
             <div class="carousel-item active" data-interval="10000">
                 <div class="container">
-                    <img src="images/gov1.jpg" class="d-block w-100" alt="1" style="height: 700px">
+                    <img src="images/gov1.jpg" class="d-block w-100" alt="1">
                 </div>
             </div>
 
             <!-- Second Slide -->
             <div class="carousel-item" data-interval="10000">
                 <div class="container">
-                    <img src="images/gov2.jpg" class="d-block w-100" alt="2" style="height: 700px">
+                    <img src="images/gov2.jpg" class="d-block w-100" alt="2">
                 </div>
             </div>
 
             <!-- Third Slide -->
             <div class="carousel-item" data-interval="10000">
                 <div class="container">
-                    <img src="images/gov3.jpg" class="d-block w-100" alt="3" style="height: 700px">
+                    <img src="images/gov3.jpg" class="d-block w-100" alt="3">
                 </div>
             </div>
         </div>

@@ -38,12 +38,12 @@
                         </li>
 
                         @else
-                        <li class="nav-item">
+                        {{-- <li class="nav-item">
                            <a class="nav-link " href="{{route('login')}}">Log In</a>
                         </li>
                         <li class="nav-item">
                            <a class="nav-link " href="{{route('register')}}">Register</a>
-                        </li>
+                        </li> --}}
                         @endauth
                         @endif
                      </ul>
@@ -71,11 +71,12 @@
                      
                      <li class="active"><a href="{{ route('homepage') }}">Home</a></li>
                      <li><a href="{{ route('organizations') }}">Organizations</a></li>
-                     <li><a href="{{ route('information') }}">Information</a></li>
+                     <li><a href="{{ route('information') }}">Information</a></li>                      
                      <li><a href="{{ route('documents') }}">Documents</a></li>
                      <li><a href="{{ route('about') }}">About</a></li>
                      <li><a href="{{ route('gallery') }}">Gallery</a></li>
                      <li><a href="{{ route('contact') }}">Contact</a></li>
+                     
                      @if (Route::has('login'))
                      @auth
                      <li>
@@ -83,8 +84,8 @@
                      </li>
 
                      @else
-                     <li><a href="{{route('login')}}">LogIn</a></li>
-                     <li><a href="{{route('register')}}">Register</a></li>
+                     {{-- <li><a href="{{route('login')}}">LogIn</a></li>
+                     <li><a href="{{route('register')}}">Register</a></li> --}}
                      @endauth
                      @endif
                   </ul>
