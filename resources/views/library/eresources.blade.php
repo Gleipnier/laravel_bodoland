@@ -1,5 +1,5 @@
 @extends('layouts.bookapp')
-
+@extends('layouts.bookcss')
 @section('title', 'Library Catalogue - E-Resources')
 
 @section('content')
@@ -11,7 +11,9 @@
                 <h2>{{ $resource->title }}</h2>
                 <p><strong>Type:</strong> {{ $resource->type }}</p>
                 @if($resource->url)
-                    <p><strong>URL:</strong> <a href="{{ $resource->url }}" target="_blank">{{ $resource->url }}</a></p>
+                <form action="{{ $resource->url }}" method="get" target="_blank">
+                    <button type="submit" class="url-button">Go to Reference</button>
+                </form>                
                 @endif
                 @if($resource->access_information)
                     <p><strong>Access Information:</strong> {{ $resource->access_information }}</p>

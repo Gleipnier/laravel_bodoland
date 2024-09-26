@@ -30,6 +30,13 @@
                         <li class="nav-item">
                            <a class="nav-link " href="{{ route('contact') }}">Contact</a>
                         </li>
+                        <li class="dropdown">
+                           <a href="#" class="dropdown-header">LIBRARY</a>
+                           <ul class="dropdown-content">
+                               <li><a href="{{ route('bookhome') }}">BookHome</a></li>
+                               <li><a href="{{ route('books') }}">Archives</a></li>
+                           </ul>
+                       </li>
                         @if (Route::has('login'))
 
                         @auth
@@ -63,12 +70,8 @@
                      <a href="">
                      <img src="images/logo.png" style="width: 300px; height: auto;">
                      </a>
-                     {{-- <a href="">
-                     <img src="images/file.png" style="width: 100px; height: auto;">
-                     </a> --}}
                   </div>
                   <ul>
-                     
                      <li class="active"><a href="{{ route('homepage') }}">Home</a></li>
                      <li><a href="{{ route('organizations') }}">Organizations</a></li>
                      <li><a href="{{ route('information') }}">Information</a></li>                      
@@ -76,7 +79,13 @@
                      <li><a href="{{ route('about') }}">About</a></li>
                      <li><a href="{{ route('gallery') }}">Gallery</a></li>
                      <li><a href="{{ route('contact') }}">Contact</a></li>
-                     
+                     <li class="dropdown">
+                        <a href="#" class="dropdown-header">LIBRARY</a>
+                        <ul class="dropdown-content">
+                            <li><a href="{{ route('bookhome') }}">BookHome</a></li>
+                            <li><a href="{{ route('books') }}">Archives</a></li>
+                        </ul>
+                    </li>
                      @if (Route::has('login'))
                      @auth
                      <li>

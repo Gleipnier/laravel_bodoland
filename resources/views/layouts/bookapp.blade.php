@@ -12,6 +12,109 @@
             padding: 0;
             background-color: #ffffff;
         }
+        /* Header container styling */
+        .header-container {
+            display: flex;
+            justify-content: space-between; /* Align branding to the left, nav to the right */
+            align-items: center;
+            padding: 10px 20px;
+            background: linear-gradient(to right, white, #faf0e6);
+            border-radius: 22px;
+            z-index: 1000;
+            position: relative;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Branding style */
+        #branding {
+            float: left;
+        }
+
+        #branding h1 {
+            margin: 0;
+            font-size: 1.8rem;
+        }
+
+        /* Nav list styling */
+        nav ul {
+            list-style: none;
+            display: flex;
+            margin: 0;
+            padding: 0;
+            justify-content: flex-end;
+        }
+
+        nav ul li {
+            position: relative;
+            padding: 0 20px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: black;
+            text-transform: uppercase;
+        }
+
+        /* Dropdown menu styling */
+        nav ul li:hover .dropdown {
+            display: block;
+        }
+
+        .dropdown {
+            display: none;
+            position: absolute;
+            background-color: #ffffff;
+            min-width: 150px;
+            box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.1);
+            z-index: 999;
+            border-radius: 8px;
+            top: 100%;
+            left: 0;
+        }
+
+        .dropdown li {
+            padding: 10px;
+            text-align: left;
+        }
+
+        .dropdown li a {
+            color: black;
+            text-transform: none;
+            display: block;
+            padding: 10px;
+        }
+
+        .dropdown li a:hover {
+            background-color: #e8491d;
+            color: white;
+        }
+
+        /* Hover effect for links */
+        nav ul li a:hover {
+            color: #cccccc;
+        }
+
+        /* Responsive design */
+        @media (max-width: 768px) {
+            .header-container {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            nav ul {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            nav ul li {
+                padding: 10px 0;
+            }
+
+            #branding {
+                margin-bottom: 10px;
+            }
+        }
+
         .container {
             width: 80%;
             margin: auto;
@@ -109,23 +212,33 @@
 </head>
 <body>
     <header>
-        <div class="container">
+        <div class="header-container">
             <div id="branding">
                 <h1>Collections</h1>
             </div>
             <nav>
                 <ul>
-                    <li class="{{ Request::is('bookhome*') ? 'current' : '' }}"><a href="{{ route('bookhome') }}">Home</a></li>
+                    <li class="{{ Request::is('homepage*') ? 'current' : '' }}"><a href="{{ route('homepage') }}">HomePage</a></li>
+                    <li class="{{ Request::is('bookhome*') ? 'current' : '' }}"><a href="{{ route('bookhome') }}">Recents</a></li>
                     <li class="{{ Request::is('books*') ? 'current' : '' }}"><a href="{{ route('books') }}">Books</a></li>
                     <li class="{{ Request::is('journals*') ? 'current' : '' }}"><a href="{{ route('journals') }}">Journals</a></li>
                     <li class="{{ Request::is('eresources*') ? 'current' : '' }}"><a href="{{ route('eresources') }}">E-Resources</a></li>
-                    <li class="{{ Request::is('book-services*') ? 'current' : '' }}"><a href="{{ route('book-services') }}">Services</a></li>
+                    <li class="{{ Request::is('book-services*') ? 'current' : '' }}">
+                        <a href="{{ route('book-services') }}">Services</a>
+                        <!-- Dropdown menu -->
+                        <ul class="dropdown">
+                            <li><a href="#">Option 1</a></li>
+                            <li><a href="#">Option 2</a></li>
+                            <li><a href="#">Option 3</a></li>
+                        </ul>
+                    </li>
                     <li class="{{ Request::is('research-learning*') ? 'current' : '' }}"><a href="{{ route('research-learning') }}">Research & Learning</a></li>
                     <li class="{{ Request::is('events-news*') ? 'current' : '' }}"><a href="{{ route('events-news') }}">Events & News</a></li>
                 </ul>
             </nav>
         </div>
     </header>
+    
 
     <div class="container">
         @yield('content')
@@ -148,4 +261,21 @@
          </div>
     </footer>
 </body>
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+    var dropdown = document.querySelector('li.has-dropdown');
+    var dropdownMenu = dropdown.querySelector('.dropdown');
+
+    // Detect touch devices
+    var isTouchDevice = 'ontouchstart' in window || navigator.maxTouchPoints > 0;
+
+    if (isTouchDevice) {
+        // For mobile: Toggle dropdown on click
+        dropdown.addEventListener('click', function(event) {
+            event.preventDefault(); // Prevent default behavior
+            dropdownMenu.classList.toggle('show'); // Toggle the 'show' class
+        });
+    }
+});
+</script>
 </html>

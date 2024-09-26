@@ -1,5 +1,17 @@
 <style>
-    
+        .url-button {
+            background-color: #4CAF50; /* Green background */
+            color: white; /* White text */
+            padding: 10px 20px; /* Some padding */
+            border: none; /* Remove borders */
+            border-radius: 5px; /* Rounded corners */
+            cursor: pointer; /* Pointer/hand icon */
+            font-size: 16px;
+        }
+
+        .url-button:hover {
+            background-color: #45a049; /* Darker green on hover */
+        }
         .container-membership {
             max-width: 1200px;
             margin: 0 auto;

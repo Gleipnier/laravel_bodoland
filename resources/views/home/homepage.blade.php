@@ -8,7 +8,6 @@
       <!-- header section start -->
       <div class="header_section">
          @include('home.header')
-         
       </div>
       <!-- header section end -->
 
