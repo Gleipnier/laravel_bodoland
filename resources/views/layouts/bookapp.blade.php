@@ -21,7 +21,8 @@
             background: linear-gradient(to right, white, #faf0e6);
             border-radius: 22px;
             z-index: 1000;
-            position: relative;
+            /* position: absolute; */
+            /* position: relative; */
             box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
         }
 
@@ -56,20 +57,27 @@
         }
 
         /* Dropdown menu styling */
-        nav ul li:hover .dropdown {
+        .displaydropdown:hover .dropdown {
             display: block;
+        }
+        .displaydropdown {
+            position: absolute;
+            z-index: 999;
+            position: relative;
         }
 
         .dropdown {
             display: none;
+            flex-direction: column;
             position: absolute;
             background-color: #ffffff;
-            min-width: 150px;
+            width: 150px;
             box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.1);
             z-index: 999;
             border-radius: 8px;
-            top: 100%;
-            left: 0;
+            top: 10%;
+            left: 40%;
+            bottom: 
         }
 
         .dropdown li {
@@ -223,7 +231,7 @@
                     <li class="{{ Request::is('books*') ? 'current' : '' }}"><a href="{{ route('books') }}">Books</a></li>
                     <li class="{{ Request::is('journals*') ? 'current' : '' }}"><a href="{{ route('journals') }}">Journals</a></li>
                     <li class="{{ Request::is('eresources*') ? 'current' : '' }}"><a href="{{ route('eresources') }}">E-Resources</a></li>
-                    <li class="{{ Request::is('book-services*') ? 'current' : '' }}">
+                    <li class="{{ Request::is('book-services*') ? 'displaydropdown' : '' }}">
                         <a href="{{ route('book-services') }}">Services</a>
                         <!-- Dropdown menu -->
                         <ul class="dropdown">
