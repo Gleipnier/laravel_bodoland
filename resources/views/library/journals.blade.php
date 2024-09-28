@@ -3,6 +3,8 @@
 @section('title', 'Library Catalogue - Journals')
 
 @section('content')
+
+
     <h1>Journals</h1>
     
     <div class="journals-list">
@@ -42,5 +44,5 @@
         .journal-item ul {
             padding-left: 20px;
         }
-    </style>
+    </styl>
 @endsection
