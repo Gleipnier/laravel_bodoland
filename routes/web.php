@@ -31,7 +31,11 @@ use App\Http\Controllers\ResearchLearningController;
 |
 */
 
-Route::get('/',[HomeController::class,'homepage']);
+Route::get('/',[HomeController::class,'newHome']);
+Route::get('/newHome',[HomeController::class,'newHome']);
+Route::get('/upcomingEvents',[HomeController::class,'UpcomingEvents']);
+Route::get('/recentNews',[HomeController::class,'RecentNews']);
+Route::get('/whoIsWho',[HomeController::class,'WhoIsWho']);
 
 /*Route::get('/dashboard', function () {
     return view('dashboard');
@@ -58,11 +62,13 @@ Route::get('/contact', function () {
     return view('pages.contact');
 })->name('contact');
 
-Route::get('/homepage', function () {
-    $latestUpdates = LatestUpdate::all();
-    $services = Service::all();
-    return view('home.homepage', compact('services', 'latestUpdates'));
-})->name('homepage');
+// Route::get('/homepage', function () {
+//     $latestUpdates = LatestUpdate::all();
+//     $services = Service::all();
+//     return view('home.homepage', compact('services', 'latestUpdates'));
+// })->name('homepage');
+Route::get('/homepage',[HomeController::class,'newHome'])->name('homepage');
+
 
 Route::get('/organizations', function () {
     return view('pages.organizations');
@@ -169,7 +175,7 @@ Route::get('/books', [LibraryCatalogueController::class, 'books'])->name('books'
 Route::get('/journals', [LibraryCatalogueController::class, 'journals'])->name('journals');
 Route::get('/eresources', [LibraryCatalogueController::class, 'eresources'])->name('eresources');
 Route::get('/feedback', [LibraryCatalogueController::class, 'feedback'])->name('feedback');
-Route::get('/bookstaff', [LibraryCatalogueController::class, 'bookstaff'])->name('bookstaff');
+Route::get('/bookstaff', [HomeController::class, 'WhoIsWho'])->name('bookstaff');
 Route::get('/faq', [LibraryCatalogueController::class, 'faq'])->name('faq');
 Route::get('/policy', [LibraryCatalogueController::class, 'policy'])->name('policy');
 Route::get('/donation', [LibraryCatalogueController::class, 'donation'])->name('donation');
