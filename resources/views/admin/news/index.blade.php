@@ -18,6 +18,7 @@
             <thead>
                 <tr>
                     <th>Title</th>
+                    <th>Content</th>
                     <th>Publish Date</th>
                     <th>Actions</th>
                 </tr>
@@ -26,6 +27,7 @@
                 @foreach ($news as $item)
                     <tr>
                         <td>{{ $item->title }}</td>
+                        <td>{{ $item->content }}</td>
                         <td>{{ $item->publish_date }}</td>
                         <td>
                             <a href="{{ route('news.edit', $item) }}" class="btn btn-warning">Edit</a>
