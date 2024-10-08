@@ -5,7 +5,7 @@ namespace App\Http\Controllers\Admin;
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use App\Models\WhoIsWho;
-use Illuminate\Support\Facades\Storage; // Add this line
+use Illuminate\Support\Facades\Storage;
 
 class WhoIsWhoController extends Controller
 {

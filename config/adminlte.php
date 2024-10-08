@@ -340,8 +340,34 @@ return [
             'icon' => 'fas fa-fw fa-plus-circle',
         ],
 
+        ['header' => 'News'],
+        [
+            'text' => 'Manage News',
+            'url'  => 'admin/news',
+            'icon' => 'fas fa-fw fa-newspaper',
+        ],
+        [
+            'text' => 'Create News',
+            'url'  => 'admin/news/create',
+            'icon' => 'fas fa-fw fa-plus-circle',
+        ],
+    
+        ['header' => 'Gallery'],
+        [
+            'text' => 'Manage Gallery',
+            'url'  => 'admin/gallery',
+            'icon' => 'fas fa-fw fa-images',
+        ],
+        [
+            'text' => 'Create Gallery Image',
+            'url'  => 'admin/gallery/create',
+            'icon' => 'fas fa-fw fa-plus-circle',
+        ],
 
 
+
+
+        
         ['header' => 'account_settings'],
         [
             'text' => 'profile',

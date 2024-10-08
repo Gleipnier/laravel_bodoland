@@ -192,6 +192,8 @@ Route::get('/books-by-subdivision/{subdivision}', [LibraryCatalogueController::c
 
 use App\Http\Controllers\Admin\EventController;
 use App\Http\Controllers\Admin\WhoIsWhoController;
+use App\Http\Controllers\Admin\NewsController;
+use App\Http\Controllers\Admin\GalleryController;
 
 
 // Admin LTE Dashboard
@@ -201,7 +203,10 @@ Route::prefix('admin')->middleware(['auth'])->group(function () {
     Route::get('dashboard', [App\Http\Controllers\Admin\DashboardController::class, 'index'])->name('admin.dashboard');
 
     Route::resource('events', EventController::class);
-    Route::resource('whoiswho', WhoIsWhoController::class);    
+    Route::resource('whoiswho', WhoIsWhoController::class); 
+    Route::resource('news', NewsController::class);
+    Route::resource('gallery', GalleryController::class);
+
 });
 
 
