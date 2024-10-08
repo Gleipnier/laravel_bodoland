@@ -20,6 +20,7 @@ use App\Http\Controllers\LatestUpdateController;
 use App\Http\Controllers\LibraryCatalogueController;
 use App\Http\Controllers\ResearchLearningController;
 
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -149,8 +150,7 @@ require __DIR__.'/auth.php';
 
 //Admin auth
 
-Route::get('admin/dashboard',[HomeController::class,'index'])->
-    middleware(['auth','admin']);
+//Route::get('admin/dashboard',[HomeController::class,'index'])->middleware(['auth','admin']);
     
 Route::get('edit/{id}',[AdminController::class,'edit']);
 
@@ -187,3 +187,26 @@ Route::get('/events-news', [EventsNewsController::class, 'index'])->name('events
 
 Route::get('/books-by-division', [LibraryCatalogueController::class, 'booksByDivision'])->name('books.division');
 Route::get('/books-by-subdivision/{subdivision}', [LibraryCatalogueController::class, 'booksBySubdivision'])->name('books.subdivision');
+
+
+
+use App\Http\Controllers\Admin\EventController;
+use App\Http\Controllers\Admin\WhoIsWhoController;
+
+
+// Admin LTE Dashboard
+
+Route::prefix('admin')->middleware(['auth'])->group(function () {
+
+    Route::get('dashboard', [App\Http\Controllers\Admin\DashboardController::class, 'index'])->name('admin.dashboard');
+
+    Route::resource('events', EventController::class);
+    Route::resource('whoiswho', WhoIsWhoController::class);    
+});
+
+
+
+
+
+
+
