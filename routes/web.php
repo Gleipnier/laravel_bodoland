@@ -194,6 +194,10 @@ use App\Http\Controllers\Admin\EventController;
 use App\Http\Controllers\Admin\WhoIsWhoController;
 use App\Http\Controllers\Admin\NewsController;
 use App\Http\Controllers\Admin\GalleryController;
+use App\Http\Controllers\Admin\BooksController;
+use App\Http\Controllers\Admin\DivisionController;
+use App\Http\Controllers\Admin\SubdivisionController;
+use App\Http\Controllers\Admin\LibraryController;
 
 
 // Admin LTE Dashboard
@@ -206,6 +210,10 @@ Route::prefix('admin')->middleware(['auth'])->group(function () {
     Route::resource('whoiswho', WhoIsWhoController::class); 
     Route::resource('news', NewsController::class);
     Route::resource('gallery', GalleryController::class);
+    Route::resource('books', BooksController::class);
+    Route::resource('divisions', DivisionController::class);
+    Route::resource('subdivisions', SubdivisionController::class);
+    Route::resource('libraries', LibraryController::class);
 
 });
 

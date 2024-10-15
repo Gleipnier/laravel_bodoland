@@ -316,123 +316,216 @@ return [
             'can' => 'manage-blog',
         ],
       
-        ['header' => 'Events'],
+        // ['header' => 'Events'],
+        // [
+        //     'text' => 'Manage Events',
+        //     'url'  => 'admin/events',
+        //     'icon' => 'fas fa-fw fa-calendar',
+        // ],
+        // [
+        //     'text' => 'Create Event',
+        //     'url'  => 'admin/events/create',
+        //     'icon' => 'fas fa-fw fa-plus-circle',
+        // ],
+
         [
-            'text' => 'Manage Events',
-            'url'  => 'admin/events',
+            'text' => 'Events',
             'icon' => 'fas fa-fw fa-calendar',
-        ],
-        [
-            'text' => 'Create Event',
-            'url'  => 'admin/events/create',
-            'icon' => 'fas fa-fw fa-plus-circle',
+            'submenu' => [
+                [
+                    'text' => 'Manage Events',
+                    'url' => 'admin/events',
+                ],
+                [
+                    'text' => 'Create Event',
+                    'url' => 'admin/events/create',
+                    'icon' => 'fas fa-fw fa-plus-circle',
+                ]
+            ],
         ],
 
-        ['header' => 'Who Is Who'],
         [
-            'text' => 'Manage Who is Who',
-            'url'  => 'admin/whoiswho',
+            'text' => 'Who Is Who',
             'icon' => 'fas fa-fw fa-address-book',
-        ],
-        [
-            'text' => 'Create Who is Who',
-            'url'  => 'admin/whoiswho/create',
-            'icon' => 'fas fa-fw fa-plus-circle',
+            'submenu' => [
+                [
+                    'text' => 'Manage Who is Who',
+                    'url' => 'admin/whoiswho',
+                ],
+                [
+                    'text' => 'Create Who is Who',
+                    'url' => 'admin/whoiswho/create',
+                    'icon' => 'fas fa-fw fa-plus-circle',
+                ]
+            ],
         ],
 
-        ['header' => 'News'],
         [
-            'text' => 'Manage News',
-            'url'  => 'admin/news',
+            'text' => 'News',
             'icon' => 'fas fa-fw fa-newspaper',
+            'submenu' => [
+                [
+                    'text' => 'Manage News',
+                    'url' => 'admin/news',
+                ],
+                [
+                    'text' => 'Create News',
+                    'url' => 'admin/news/create',
+                    'icon' => 'fas fa-fw fa-plus-circle',
+                ]
+            ],
         ],
+
         [
-            'text' => 'Create News',
-            'url'  => 'admin/news/create',
-            'icon' => 'fas fa-fw fa-plus-circle',
-        ],
-    
-        ['header' => 'Gallery'],
-        [
-            'text' => 'Manage Gallery',
-            'url'  => 'admin/gallery',
+            'text' => 'Gallery',
             'icon' => 'fas fa-fw fa-images',
+            'submenu' => [
+                [
+                    'text' => 'Manage Gallery',
+                    'url' => 'admin/gallery',
+                ],
+                [
+                    'text' => 'Create Gallery',
+                    'url' => 'admin/gallery/create',
+                    'icon' => 'fas fa-fw fa-plus-circle',
+                ]
+            ],
+        ],
+
+        [
+            'text' => 'Books',
+            'icon' => 'fas fa-fw fa-book',
+            'submenu' => [
+                [
+                    'text' => 'Manage Books',
+                    'url' => 'admin/books',
+                ],
+                [
+                    'text' => 'Create Book',
+                    'url' => 'admin/books/create',
+                    'icon' => 'fas fa-fw fa-plus-circle',
+                ]
+            ],
+        ],
+
+
+        [
+            'text' => 'Divisions',
+            'icon' => 'fas fa-fw fa-building',
+            'submenu' => [
+                [
+                    'text' => 'Manage Divisions',
+                    'url' => 'admin/divisions',
+                ],
+                [
+                    'text' => 'Create Divisions',
+                    'url' => 'admin/divisions/create',
+                    'icon' => 'fas fa-fw fa-plus-circle',
+                ],
+            ],
         ],
         [
-            'text' => 'Create Gallery Image',
-            'url'  => 'admin/gallery/create',
-            'icon' => 'fas fa-fw fa-plus-circle',
+            'text' => 'Subdivisions',
+            'icon' => 'fas fa-fw fa-th-list',
+            'submenu' => [
+                [
+                    'text' => 'Manage Subdivisions',
+                    'url' => 'admin/subdivisions',
+                ],
+                [
+                    'text' => 'Create Subdivisions',
+                    'url' => 'admin/subdivisions/create',
+                    'icon' => 'fas fa-fw fa-plus-circle',
+                ]
+            ],
         ],
+        [
+            'text' => 'Library',
+            'icon' => 'fas fa-fw fa-book-open',
+            'submenu' => [
+                [
+                    'text' => 'Manage Library',
+                    'url' => 'admin/libraries',
+                ],
+                [
+                    'text' => 'Create Library',
+                    'url' => 'admin/libraries/create',
+                    'icon' => 'fas fa-fw fa-plus-circle',
+                ],
+               
+            ],
+        ],
+
 
 
 
 
         
-        ['header' => 'account_settings'],
-        [
-            'text' => 'profile',
-            'url' => 'admin/settings',
-            'icon' => 'fas fa-fw fa-user',
-        ],
-        [
-            'text' => 'change_password',
-            'url' => 'admin/settings',
-            'icon' => 'fas fa-fw fa-lock',
-        ],
-        [
-            'text' => 'multilevel',
-            'icon' => 'fas fa-fw fa-share',
-            'submenu' => [
-                [
-                    'text' => 'level_one',
-                    'url' => '#',
-                ],
-                [
-                    'text' => 'level_one',
-                    'url' => '#',
-                    'submenu' => [
-                        [
-                            'text' => 'level_two',
-                            'url' => '#',
-                        ],
-                        [
-                            'text' => 'level_two',
-                            'url' => '#',
-                            'submenu' => [
-                                [
-                                    'text' => 'level_three',
-                                    'url' => '#',
-                                ],
-                                [
-                                    'text' => 'level_three',
-                                    'url' => '#',
-                                ],
-                            ],
-                        ],
-                    ],
-                ],
-                [
-                    'text' => 'level_one',
-                    'url' => '#',
-                ],
-            ],
-        ],
-        ['header' => 'labels'],
-        [
-            'text' => 'important',
-            'icon_color' => 'red',
-            'url' => '#',
-        ],
-        [
-            'text' => 'warning',
-            'icon_color' => 'yellow',
-            'url' => '#',
-        ],
-        [
-            'text' => 'information',
-            'icon_color' => 'cyan',
-            'url' => '#',
-        ],
+        // ['header' => 'account_settings'],
+        // [
+        //     'text' => 'profile',
+        //     'url' => 'admin/settings',
+        //     'icon' => 'fas fa-fw fa-user',
+        // ],
+        // [
+        //     'text' => 'change_password',
+        //     'url' => 'admin/settings',
+        //     'icon' => 'fas fa-fw fa-lock',
+        // ],
+        // [
+        //     'text' => 'multilevel',
+        //     'icon' => 'fas fa-fw fa-share',
+        //     'submenu' => [
+        //         [
+        //             'text' => 'level_one',
+        //             'url' => '#',
+        //         ],
+        //         [
+        //             'text' => 'level_one',
+        //             'url' => '#',
+        //             'submenu' => [
+        //                 [
+        //                     'text' => 'level_two',
+        //                     'url' => '#',
+        //                 ],
+        //                 [
+        //                     'text' => 'level_two',
+        //                     'url' => '#',
+        //                     'submenu' => [
+        //                         [
+        //                             'text' => 'level_three',
+        //                             'url' => '#',
+        //                         ],
+        //                         [
+        //                             'text' => 'level_three',
+        //                             'url' => '#',
+        //                         ],
+        //                     ],
+        //                 ],
+        //             ],
+        //         ],
+        //         [
+        //             'text' => 'level_one',
+        //             'url' => '#',
+        //         ],
+        //     ],
+        // ],
+        // ['header' => 'labels'],
+        // [
+        //     'text' => 'important',
+        //     'icon_color' => 'red',
+        //     'url' => '#',
+        // ],
+        // [
+        //     'text' => 'warning',
+        //     'icon_color' => 'yellow',
+        //     'url' => '#',
+        // ],
+        // [
+        //     'text' => 'information',
+        //     'icon_color' => 'cyan',
+        //     'url' => '#',
+        // ],
     ],
 
     /*

@@ -7,7 +7,12 @@ use Illuminate\Database\Eloquent\Model;
 
 class Library extends Model
 {
-    protected $fillable = ['name', 'subdivision'];
+    protected $fillable = ['name', 'subdivision_id'];
+
+    public function subdivision()
+    {
+        return $this->belongsTo(Subdivision::class);
+    }
 
     public function books()
     {

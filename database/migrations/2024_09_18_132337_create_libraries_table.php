@@ -11,7 +11,7 @@ return new class extends Migration
         Schema::create('libraries', function (Blueprint $table) {
             $table->id();
             $table->string('name');
-            $table->string('subdivision')->nullable();
+            $table->string('subdivision_id')->nullable();
             $table->timestamps();
         });
     }
