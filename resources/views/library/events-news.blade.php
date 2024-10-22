@@ -126,10 +126,18 @@
 
 @section('content')
 
+    <section class="sep_blk_t bread-crumb">
+
+        <div class="container">
+
+            <h1 class="fz42 text-center fw800">Event & News</h1>
+
+        </div>
+
+    </section>
+
     <div class="container-membership" style="padding-top: 70px">
         <div class="content">
-
-            <h1>Event & News</h1>
 
             <div class="card">
                 <div class="card-header">

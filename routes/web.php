@@ -187,6 +187,7 @@ Route::get('/book-services', [BookServicesController::class, 'index'])->name('bo
 Route::get('/research-learning', [ResearchLearningController::class, 'index'])->name('research-learning');
 Route::get('/events-news', [EventsNewsController::class, 'index'])->name('events-news');
 Route::get('/notifications', [LibraryCatalogueController::class, 'notifications'])->name('allnotifications');
+Route::get('/notificationView/{id}', [LibraryCatalogueController::class, 'notificationView'])->name('notificationView');
 
 //cicular test
 

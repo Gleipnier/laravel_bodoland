@@ -401,7 +401,7 @@
                 <ul class="contact-list">
                     <li><strong>Address:</strong> Dimalgaon, Titaguri, Dist.- Kokrajhar, Assam-783370</li>
                     <li><strong>Phone:</strong> (+91) 7002974632</li>
-                    <li><strong>Email:</strong> sansumwi@gmail.com</li>
+                    <li><strong>Email:</strong> contact.librarybtc@gmail.com</li>
                     <li><strong>Hours of Operation:</strong></li>
                     <ul>
                         <li>Monday - Friday: 9 AM - 6 PM</li>

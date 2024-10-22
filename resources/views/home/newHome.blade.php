@@ -144,7 +144,7 @@
                                     aria-hidden="true">
                                     <!-- Display event start and end date dynamically -->
                                     <span class="fz18 fw-bold d-block mb-3 orange-color">
-                                        {{ \Carbon\Carbon::parse($notification->date)->format('M d, Y h:i A') }}
+                                        {{ \Carbon\Carbon::parse($notification->date)->format('M d, Y') }}
                                     </span>
 
                                     <!-- Display event title -->

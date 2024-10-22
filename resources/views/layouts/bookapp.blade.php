@@ -278,7 +278,7 @@
                                         <h5>Contact Us</h5>
                                         <p>Dimalgaon, Titaguri, Dist.- Kokrajhar, Assam-783370 <br><i
                                                 class="las la-map-marker"></i> 7002974632
-                                            <br><i class="las la-envelope"></i> sansumwi@gmail.com
+                                            <br><i class="las la-envelope"></i> contact.librarybtc@gmail.com
                                         </p>
                                     </div>
                                     <br>
@@ -291,7 +291,7 @@
                     <div class="d-lg-flex footer-nav justify-content-between align-items-center">
                         <nav>
                             <p>
-                                Copyright © 2024 | Designed & Developed With by <a href="/" target="_blank"
+                                Copyright © 2024 | Designed & Developed by <a href="/" target="_blank"
                                     rel="noopener noreferrer">Department of Library,
                                     BTR</a></p>
 

@@ -118,5 +118,10 @@ class LibraryCatalogueController extends Controller
         $notifications = Notification::all();
         return view('notification')->with('notifications', $notifications);
     }
+    public function notificationView($id)
+    {
+        $notification = Notification::find($id);
+        return view('notificationDetails', compact('notification'));
+    }
 
 }

@@ -1,15 +1,14 @@
 @extends('layouts.bookapp')
 
-@section('title', 'Upcoming Events')
+@section('title', 'Notifications')
 
 @section('content')
 
 
     <section class="sep_blk_t bread-crumb">
-
         <div class="container">
 
-            <h1 class="fz42 text-center fw800">Notifications</h1>
+            <h1 class="fz42 text-center fw800">Notifications View</h1>
 
         </div>
 
@@ -33,10 +32,16 @@
                                 <div class="col-lg-8">
                                     <div class="con_bk">
                                         <div class="dt mb-3"><i class="fas fa-calendar-alt"></i>
-                                            {{ \Carbon\Carbon::parse($notification->date)->format('M d, Y h:i A') }}
+                                            {{ \Carbon\Carbon::parse($notification->date)->format('M d, Y') }}
                                         </div>
                                         <p class="hndg">{{ $notification->title }} </p>
                                         <p class="">{{ $notification->description }} </p>
+                                        <p>
+                                            @if ($notification->document)
+                                                <a href="{{ asset('storage/' . $notification->document) }}" target="_blank"
+                                                    class="btn btn-primary">View Document</a>
+                                            @endif
+                                        </p>
                                     </div>
                                 </div>
                             </div>
