@@ -57,7 +57,7 @@
             cursor: pointer;
             display: none;
         }
-        
+
         .menu-toggle-reverse {
             background: none;
             border: none;
@@ -107,7 +107,7 @@
             .menu-toggle-reverse {
                 display: none;
             }
-            
+
             .nav-list-local {
                 position: fixed;
                 top: 0;
@@ -252,7 +252,8 @@
                             <div class="col-lg-4 col-6 px-xl-5">
                                 <h3>Policies</h3>
                                 <ul class="list-unstyled">
-                                    <li><a href="{{ route('policy') }}"><i class="las la-angle-right"></i>Copyright Policy</a></li>
+                                    <li><a href="{{ route('policy') }}"><i class="las la-angle-right"></i>Copyright
+                                            Policy</a></li>
                                     <li><a href="/"><i class="las la-angle-right"></i>Hyperlinking Policy</a>
                                     </li>
                                     <li><a href="/"><i class="las la-angle-right"></i>Privacy Policy </a></li>
@@ -264,9 +265,9 @@
                                     style="visibility: hidden; animation-name: none;">
                                     <div class="f-newsletter list-unstyled">
                                         <h5>Contact Us</h5>
-                                        <p>Office of the Director of Library BTC, Kokrajhar Station Road <br><i
-                                                class="las la-map-marker"></i> Kokrajhar, BTR, Assam - 783370
-                                            <br><i class="las la-envelope"></i> library.btr@gmail.com
+                                        <p>Dimalgaon, Titaguri, Dist.- Kokrajhar, Assam-783370 <br><i
+                                                class="las la-map-marker"></i> 7002974632
+                                            <br><i class="las la-envelope"></i> sansumwi@gmail.com
                                         </p>
                                     </div>
                                     <br>
