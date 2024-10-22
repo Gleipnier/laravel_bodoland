@@ -6,6 +6,13 @@
 
 @section('content')
 
+    <style>
+        table td,
+        table th {
+            padding: 20px !important;
+        }
+    </style>
+
     <section class="sep_blk_t bread-crumb mt-10">
         <div class="container">
             <h1 class="fz42 text-center fw800">Book Collection </h1>
