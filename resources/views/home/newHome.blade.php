@@ -34,7 +34,7 @@
             <span class="visually-hidden">Next</span>
         </button>
     </div>
-    
+
     <div id="carouselExample" class="carousel slide menu-toggle" data-bs-ride="carousel">
         <div class="carousel-inner">
             <div class="carousel-item active">
@@ -80,36 +80,44 @@
                 <div class="col-lg-12">
                     <h1 class="main-heading wow fadeInUp" style="visibility: visible; animation-name: fadeInUp;">
                         ABOUT US </h1>
-    
-    
+
+
                     <div class="row">
                         <div class="col-sm-3">
                             <figure class="wow fadeInLeft position-relative videoPlayImg"
                                 style="visibility: visible; animation-name: fadeInLeft;"><img alt=""
                                     class="img-fluid w-100" src="images/about.png"></figure>
                         </div>
-    
+
                         <div class="col-sm-8 ps-xl-4 mt-4 mt-sm-0">
                             <h3 class="fz22 fw700 color-blue mb-4 wow fadeInUp"
-                                style="visibility: visible; animation-name: fadeInUp;">The Department of Library Services at BTC</h3>
-    
+                                style="visibility: visible; animation-name: fadeInUp;">The Department of Library Services at
+                                BTC</h3>
+
                             <p class="fw500 color-333333 mb-0 wow fadeInUp"
                                 style="text-align: justify; visibility: visible; animation-name: fadeInUp;">
-                                
-                                The Department of Library Services at BTC, Kokrajhar, places a strong emphasis on building a comprehensive collection of books, periodicals, journals, and employment news to meet the needs of students, research scholars, academics, and the general public in BTAD. These resources serve as valuable references for the people of the region.
-                            
+
+                                The Department of Library Services at BTC, Kokrajhar, places a strong emphasis on building a
+                                comprehensive collection of books, periodicals, journals, and employment news to meet the
+                                needs of students, research scholars, academics, and the general public in BTAD. These
+                                resources serve as valuable references for the people of the region.
+
                             </p>
-    
+
                             <br />
-    
+
                             <p class="fw500 color-333333 mb-0 wow fadeInUp"
                                 style="text-align: justify; visibility: visible; animation-name: fadeInUp;">
-                               To promote and enhance reading habits among the public, the department regularly organizes awareness programs such as quizzes, debates, essay writing, and extempore speech competitions. Additionally, the department has initiated efforts to support and improve the Registered Club cum Libraries within BTAD, contributing to the overall development of libraries and access to knowledge in the area.
+                                To promote and enhance reading habits among the public, the department regularly organizes
+                                awareness programs such as quizzes, debates, essay writing, and extempore speech
+                                competitions. Additionally, the department has initiated efforts to support and improve the
+                                Registered Club cum Libraries within BTAD, contributing to the overall development of
+                                libraries and access to knowledge in the area.
                             </p>
                         </div>
                     </div>
                 </div>
-    
+
             </div>
         </div>
     </section>
@@ -215,7 +223,7 @@
                 <div class="col-md-12 mt-5 mt-md-0 pt-5 pt-md-0 ps-md-5">
                     <div class="d-flex align-items-center justify-content-between mb-5 pb-xl-3 wow fadeInUp"
                         style="visibility: visible; animation-name: fadeInUp;">
-                        <h2 class="main-heading mb-0">WHO IS WHO</h2>
+                        <h2 class="main-heading mb-0">WHO'S WHO</h2>
                         <a href="{{ url('/whoIsWho') }}" class="common-btn">VIEW ALL</a>
                     </div>
                     <div class="row g-5">

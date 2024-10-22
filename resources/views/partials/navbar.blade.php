@@ -73,21 +73,16 @@
                 </a>
             </li>
 
-            <li class="{{ Request::is('faq*') ? 'current' : '' }}">
-                <a href="{{ route('faq') }}">FAQ</a>
-            </li>
 
             <li class="{{ Request::is('bookstaff*') ? 'current' : '' }}">
                 <a href="{{ route('bookstaff') }}">
-                    Who IsWho
+                    Who's Who
                 </a>
             </li>
             <li class="{{ Request::is('gallery') ? 'current' : '' }}">
                 <a href="{{ route('gallery') }}">Gallery</a>
             </li>
-            <li class="{{ Request::is('eresources*') ? 'current' : '' }}">
-                <a href="{{ route('eresources') }}">E-Resources</a>
-            </li>
+
             <li class="{{ Request::is('book-services*') ? 'current' : '' }}">
                 <a href="{{ route('book-services') }}">Services</a>
             </li>

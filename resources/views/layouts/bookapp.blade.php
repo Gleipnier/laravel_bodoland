@@ -239,12 +239,25 @@
                                 <h3>Useful Links</h3>
                                 <ul class="list-unstyled">
 
-                                    <li><a href="https://bodoland.gov.in/"><i class="las la-angle-right"></i>Govt. of
-                                            Bodoland</a></li>
-                                    <li><a href="/"><i class="las la-angle-right"></i>Grievance Redressal Portal
-                                        </a></li>
-                                    <li><a href="/"><i class="las la-angle-right"></i>General Information</a>
+                                    <li>
+                                        <a href="https://bodoland.gov.in/"><i class="las la-angle-right"></i>Govt. of
+                                            Bodoland</a>
                                     </li>
+                                    <li>
+                                        <a href="/"><i class="las la-angle-right"></i>Grievance Redressal Portal
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="/"><i class="las la-angle-right"></i>General Information</a>
+                                    </li>
+                                    <li>
+                                        <a href="{{ url('/faq') }}"><i class="las la-angle-right"></i>FAQ</a>
+                                    </li>
+                                    <li>
+                                        <a href="{{ url('/eresources') }}"><i
+                                                class="las la-angle-right"></i>E-Resources</a>
+                                    </li>
+
 
                                 </ul>
                             </div>
