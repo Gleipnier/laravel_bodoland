@@ -217,7 +217,7 @@
         </div>
     </section>
 
-    <section class="common-section research-highlights">
+    {{-- <section class="common-section research-highlights">
         <div class="container">
             <div class="row gx-md-5">
                 <div class="col-md-12 mt-5 mt-md-0 pt-5 pt-md-0 ps-md-5">
@@ -250,7 +250,7 @@
 
             </div>
         </div>
-    </section>
+    </section> --}}
 
 
     <section class="common-section study-iitk pb-5 about-iitkgp">
