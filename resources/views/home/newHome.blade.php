@@ -166,15 +166,13 @@
 
                         </div>
                     </div>
-                    <div class="bx-controls bx-has-controls-direction">
-                        <div class="bx-controls-direction"><a class="bx-prev" href="">Prev</a><a class="bx-next"
-                                href="">Next</a></div>
-                    </div>
+
                 </div>
 
                 <div class="btn-group mt-5 pt-3 wow fadeInUp" style="visibility: visible; animation-name: fadeInUp;">
                     <a href="{{ url('/upcomingEvents') }}" class="common-btn">VIEW ALL EVENTS</a>
                 </div>
+
             </div>
 
 
@@ -208,7 +206,10 @@
                             </div>
                         @endforeach
 
+                    </div>
 
+                    <div class="btn-group mt-5 pt-3 wow fadeInUp" style="visibility: visible; animation-name: fadeInUp;">
+                        <a href="{{ url('/gallery') }}" class="common-btn">VIEW ALL GALLERY</a>
                     </div>
 
                 </div>

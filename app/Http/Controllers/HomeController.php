@@ -56,7 +56,7 @@ class HomeController extends Controller
 
         $events = Event::all();
         $news = News::all();
-        $galleries = Gallery::all();
+        $galleries = Gallery::take(4)->get();
         $whoIsWhos = WhoIsWho::all();
 
         return view("home.newHome")->with('events', $events)->with('news', $news)->with('galleries', $galleries)->with('whoIsWhos', $whoIsWhos);

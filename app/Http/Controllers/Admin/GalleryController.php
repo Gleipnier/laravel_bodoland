@@ -24,7 +24,7 @@ class GalleryController extends Controller
     {
         // Validate the incoming request data
         $validated = $request->validate([
-            'category' => 'required|string|max:255',
+            'category' => 'nullable|string|max:255',
             'gallery_image_title' => 'required|string|max:255',
             'gallery_image_url' => 'required|image|mimes:jpeg,png,jpg,gif|max:2048', // Validate image
         ]);
@@ -58,7 +58,7 @@ class GalleryController extends Controller
     {
         // Validate incoming request data
         $validated = $request->validate([
-            'category' => 'required|string|max:255',
+            'category' => 'nullable|string|max:255',
             'gallery_image_title' => 'required|string|max:255',
             'gallery_image_url' => 'nullable|image|mimes:jpeg,png,jpg,gif|max:2048', // Validate image
         ]);

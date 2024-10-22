@@ -18,7 +18,7 @@
                 <tr>
                     <th>ID</th>
                     <th>Title</th>
-                    <th>Category</th>
+                    {{-- <th>Category</th> --}}
                     <th>Image</th>
                     <th>Actions</th>
                 </tr>
@@ -28,7 +28,7 @@
                     <tr>
                         <td>{{ $gallery->id }}</td>
                         <td>{{ $gallery->gallery_image_title }}</td>
-                        <td>{{ $gallery->category }}</td>
+                        {{-- <td>{{ $gallery->category }}</td> --}}
                         <td><img src="{{ $gallery->gallery_image_url }}" alt="{{ $gallery->gallery_image_title }}"
                                 width="100"></td>
                         <td>

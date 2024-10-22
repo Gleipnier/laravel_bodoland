@@ -13,10 +13,10 @@
                 <input type="text" name="gallery_image_title" class="form-control"
                     value="{{ $gallery->gallery_image_title }}" required>
             </div>
-            <div class="form-group">
+            {{-- <div class="form-group">
                 <label for="category">Category</label>
                 <input type="text" name="category" class="form-control" value="{{ $gallery->category }}" required>
-            </div>
+            </div> --}}
             <div class="form-group">
                 <label for="gallery_image_url">Image</label>
                 <input type="file" name="gallery_image_url" class="form-control">
