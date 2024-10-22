@@ -186,6 +186,7 @@ Route::get('/donation', [LibraryCatalogueController::class, 'donation'])->name('
 Route::get('/book-services', [BookServicesController::class, 'index'])->name('book-services');
 Route::get('/research-learning', [ResearchLearningController::class, 'index'])->name('research-learning');
 Route::get('/events-news', [EventsNewsController::class, 'index'])->name('events-news');
+Route::get('/notifications', [LibraryCatalogueController::class, 'notifications'])->name('allnotifications');
 
 //cicular test
 
@@ -202,6 +203,7 @@ use App\Http\Controllers\Admin\BooksController;
 use App\Http\Controllers\Admin\DivisionController;
 use App\Http\Controllers\Admin\SubdivisionController;
 use App\Http\Controllers\Admin\LibraryController;
+use App\Http\Controllers\Admin\NotificationController;
 
 
 // Admin LTE Dashboard
@@ -218,6 +220,7 @@ Route::prefix('admin')->middleware(['auth'])->group(function () {
     Route::resource('divisions', DivisionController::class);
     Route::resource('subdivisions', SubdivisionController::class);
     Route::resource('libraries', LibraryController::class);
+    Route::resource('notifications', NotificationController::class);
 
 });
 

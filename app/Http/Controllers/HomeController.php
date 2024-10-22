@@ -13,6 +13,7 @@ use App\Models\Event;
 use App\Models\News;
 use App\Models\Gallery;
 use App\Models\WhoIsWho;
+use App\Models\Notification;
 
 use Illuminate\Support\Facades\Auth;
 class HomeController extends Controller
@@ -54,12 +55,13 @@ class HomeController extends Controller
     public function newHome()
     {
 
-        $events = Event::all();
+        //$events = Event::all();
+        $notifications = Notification::all();
         $news = News::all();
         $galleries = Gallery::take(4)->get();
         $whoIsWhos = WhoIsWho::all();
 
-        return view("home.newHome")->with('events', $events)->with('news', $news)->with('galleries', $galleries)->with('whoIsWhos', $whoIsWhos);
+        return view("home.newHome")->with('notifications', $notifications)->with('news', $news)->with('galleries', $galleries)->with('whoIsWhos', $whoIsWhos);
         //return view("home")->with('events', $events)->with('news', $news)->with('galleries', $galleries)->with('whoIsWhos', $whoIsWhos);
     }
 

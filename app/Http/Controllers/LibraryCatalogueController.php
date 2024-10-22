@@ -8,6 +8,7 @@ use App\Models\Division;
 use App\Models\EResource;
 use Illuminate\Http\Request;
 use App\Models\Gallery;
+use App\Models\Notification;
 
 class LibraryCatalogueController extends Controller
 {
@@ -111,6 +112,11 @@ class LibraryCatalogueController extends Controller
     {
         $galleries = Gallery::all();
         return view('library.gallery')->with('galleries', $galleries);
+    }
+    public function notifications()
+    {
+        $notifications = Notification::all();
+        return view('notification')->with('notifications', $notifications);
     }
 
 }

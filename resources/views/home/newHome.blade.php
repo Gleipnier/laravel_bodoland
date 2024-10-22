@@ -130,7 +130,7 @@
         <div class="row ">
             <div class="col-lg-12 ps-xl-12  mt-5 mt-lg-0 pt-5 pt-xl-0">
                 <h2 class="main-heading wow fadeInUp" style="visibility: visible; animation-name: fadeInUp;">
-                    UPCOMING EVENTS</h2>
+                    NOTIFICATION</h2>
 
                 <div class="bx-wrapper" style="max-width: 100%;">
                     <div class="bx-viewport" aria-live="polite"
@@ -138,27 +138,26 @@
                         <div class="upcoming-events wow fadeInUp"
                             style="width: auto; position: relative; transition-duration: 0s; transform: translate3d(0px, -798.055px, 0px); visibility: visible; animation-name: fadeInUp;">
 
-                            @foreach ($events as $event)
+                            @foreach ($notifications as $notification)
                                 <div class="item bg-white border p-4 bx-clone"
                                     style="float: none; list-style: none; position: relative; width: 782px; margin-bottom: 15px;"
                                     aria-hidden="true">
                                     <!-- Display event start and end date dynamically -->
                                     <span class="fz18 fw-bold d-block mb-3 orange-color">
-                                        {{ \Carbon\Carbon::parse($event->start_time)->format('M d, Y h:i A') }} to
-                                        {{ \Carbon\Carbon::parse($event->end_time)->format('M d, Y h:i A') }}
+                                        {{ \Carbon\Carbon::parse($notification->date)->format('M d, Y h:i A') }}
                                     </span>
 
                                     <!-- Display event title -->
-                                    <p class="mb-1 fw-bold">{{ $event->title }}</p>
+                                    <p class="mb-1 fw-bold">{{ $notification->title }}</p>
 
                                     <!-- Display event description -->
-                                    <p class="mb-3">{{ $event->description }}</p>
+                                    <p class="mb-3">{{ $notification->description }}</p>
 
                                     <!-- Read More link -->
                                     <p class="mb-0 d-flex justify-content-between">
                                         <span></span> <!-- Empty span to align with 'Read More' link -->
                                         <span class="text-right">
-                                            <a href="{{ url('/upcomingEvents') }}"><b>Read More</b></a>
+                                            <a href="{{ url('/notifications') }}"><b>Read More</b></a>
                                         </span>
                                     </p>
                                 </div>
@@ -170,7 +169,7 @@
                 </div>
 
                 <div class="btn-group mt-5 pt-3 wow fadeInUp" style="visibility: visible; animation-name: fadeInUp;">
-                    <a href="{{ url('/upcomingEvents') }}" class="common-btn">VIEW ALL EVENTS</a>
+                    <a href="{{ url('/notifications') }}" class="common-btn">VIEW ALL NOTIFICATION</a>
                 </div>
 
             </div>

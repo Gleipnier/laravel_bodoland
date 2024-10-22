@@ -60,6 +60,10 @@
                 <a href="{{ route('books') }}">Books</a>
             </li>
 
+            <li class="{{ Request::is('notifications') ? 'current' : '' }}">
+                <a href="{{ route('allnotifications') }}">Notifications</a>
+            </li>
+
             <li class="{{ Request::is('bookCollection') ? 'current' : '' }}">
                 <a href="{{ route('bookCollection') }}">Book Collection</a>
             </li>
@@ -87,8 +91,10 @@
                 <a href="{{ route('book-services') }}">Services</a>
             </li>
 
-            <li class="{{ Request::is('events-news*') ? 'current' : '' }}"><a href="{{ route('events-news') }}">Events
-                    & News</a></li>
+            <li class="{{ Request::is('events-news*') ? 'current' : '' }}">
+                <a href="{{ route('events-news') }}">Events
+                    & News</a>
+            </li>
         </ul>
     </div>
 </nav>

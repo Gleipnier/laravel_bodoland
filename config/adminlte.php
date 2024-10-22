@@ -457,6 +457,24 @@ return [
         ],
 
 
+        [
+            'text' => 'Notification',
+            'icon' => 'fas fa-fw fa-bell',
+            'submenu' => [
+                [
+                    'text' => 'Manage Notification',
+                    'url' => 'admin/notifications',
+                ],
+                [
+                    'text' => 'Create Notification',
+                    'url' => 'admin/notifications/create',
+                    'icon' => 'fas fa-fw fa-plus-circle',
+                ],
+               
+            ],
+        ],
+
+
 
 
 
