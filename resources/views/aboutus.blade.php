@@ -111,6 +111,55 @@
 
                         </div>
                     </div>
+
+                    <div class="row mt-4 img_s1">
+                        <div class="col-sm-12">
+                            <h4>Directorate</h5>
+                                <p>The CHD cum District Librarian of Library Services Department, BTC, Kokrajhar.</p>
+                        </div>
+                    </div>
+
+                    <div class="row mt-4 img_s1">
+                        <div class="col-sm-12">
+                            <h4>District Level Library Offices</h4>
+                            <p>i) District Library, Kokrajhar.<br>
+                                ii) District Library, Chirang.<br>
+                                iii) District Library, Baksa.<br>
+                                iv) District Library, Udalguri.</p>
+                        </div>
+                    </div>
+
+                    <div class="row mt-4 img_s1">
+                        <div class="col-sm-12">
+                            <h4>Sub-Divisional Level Library Offices</h4>
+                            <p>i) Sub-Divisional Library, Gossaigaon, Kokrajhar.<br>
+                                ii) Sub-Divisional Library, Tamulpur, Baksa.</p>
+                        </div>
+                    </div>
+
+                    <div class="row mt-4 img_s1">
+                        <div class="col-sm-12">
+                            <h4>Model Rural Libraries (MRL)</h4>
+                            <p>i) MRL, Debargaon, Kokrajhar.<br>
+                                ii) MRL, Subaijhar, Chirang.<br>
+                                iii) MRL, Patkijuli, Baksa.<br>
+                                iv) MRL, Borobazar, Udalguri.</p>
+                        </div>
+                    </div>
+
+                    <div class="row mt-4 img_s1">
+                        <div class="col-sm-12">
+                            <h4>Rural Libraries</h4>
+                            <p>i) Kokrajhar District - 09 nos.<br>
+                                ii) Chirang District - 01 nos.<br>
+                                iii) Baksa District - 07 nos.<br>
+                                iv) Udalguri District - 06 nos.<br>
+                                Total: 23 nos.</p>
+                        </div>
+                    </div>
+
+
+
                 </div>
             </div>
         </div>
