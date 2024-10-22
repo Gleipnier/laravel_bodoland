@@ -32,11 +32,12 @@ use App\Http\Controllers\ResearchLearningController;
 |
 */
 
-Route::get('/',[HomeController::class,'newHome']);
+Route::get('/',[HomeController::class,'newHome'])->name('newHome');
 Route::get('/newHome',[HomeController::class,'newHome']);
 Route::get('/upcomingEvents',[HomeController::class,'UpcomingEvents']);
 Route::get('/recentNews',[HomeController::class,'RecentNews']);
 Route::get('/whoIsWho',[HomeController::class,'WhoIsWho']);
+Route::get('/aboutus',[HomeController::class,'AboutUs'])->name('aboutus');
 
 /*Route::get('/dashboard', function () {
     return view('dashboard');

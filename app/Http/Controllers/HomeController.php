@@ -80,6 +80,11 @@ class HomeController extends Controller
         $whoIsWhos = WhoIsWho::all();
         return view("whoswho")->with('whoIsWhos', $whoIsWhos);
     }
+
+    public function AboutUs()
+    {
+        return view("aboutus");
+    }
     
 
 
