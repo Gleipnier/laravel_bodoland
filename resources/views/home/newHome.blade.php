@@ -1,6 +1,6 @@
 @extends('layouts.bookapp')
 
-@section('title', 'BTR Library')
+@section('title', 'Directorate of Library Services Department, BTC, Kokrajhar')
 
 @section('carousel')
 
@@ -69,9 +69,12 @@
 
 
     <marquee style="margin:5px; font-size:15px; scrolldelay=60" onmouseover="this.stop()" onmouseout="this.start()">
-        Welcome to the BTR Library website! This is your one-stop e-library where you can easily find a wide range of
-        books, journals, and e-services. Explore our digital collection and resources designed to support your learning,
-        research, and reading interests. Happy exploring!
+        @foreach ($notifications as $notification)
+            {{ $notification->title }}
+            @if (!$loop->last)
+                ,
+            @endif
+        @endforeach
     </marquee>
 
     <section class="common-section about-iitkgp">

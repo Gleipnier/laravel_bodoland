@@ -38,8 +38,11 @@
                                         <p class="">{{ $notification->description }} </p>
                                         <p>
                                             @if ($notification->document)
-                                                <a href="{{ asset('storage/' . $notification->document) }}" target="_blank"
-                                                    class="btn btn-primary">View Document</a>
+                                                <div class="btn-group mt-5 pt-3 wow fadeInUp"
+                                                    style="visibility: visible; animation-name: fadeInUp;">
+                                                    <a href="{{ asset('storage/' . $notification->document) }}"
+                                                        target="_blank" class="common-btn">VIEW DOCUMENT</a>
+                                                </div>
                                             @endif
                                         </p>
                                     </div>

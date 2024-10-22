@@ -288,7 +288,7 @@
                     </div>
 
 
-                    <div class="d-lg-flex footer-nav justify-content-between align-items-center">
+                    <div class="footer-nav text-center">
                         <nav>
                             <p>
                                 Copyright © 2024 | Designed & Developed by <a href="/" target="_blank"
