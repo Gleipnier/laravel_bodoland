@@ -172,6 +172,9 @@ Route::prefix('admin')->middleware(['auth', 'admin'])->group(function () {
 //Books section
 
 Route::get('/bookhome', [LibraryCatalogueController::class, 'home'])->name('bookhome');
+Route::get('/library', [LibraryCatalogueController::class, 'library'])->name('library');
+Route::get('/bookCollection', [LibraryCatalogueController::class, 'bookCollection'])->name('bookCollection');
+Route::get('/gallery', [LibraryCatalogueController::class, 'gallery'])->name('gallery');
 Route::get('/books', [LibraryCatalogueController::class, 'books'])->name('books');
 Route::get('/journals', [LibraryCatalogueController::class, 'journals'])->name('journals');
 Route::get('/eresources', [LibraryCatalogueController::class, 'eresources'])->name('eresources');
