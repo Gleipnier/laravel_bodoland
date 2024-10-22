@@ -223,12 +223,11 @@
                 <div class="row gx-lg-5 footer-links">
                     <div class="col-lg-3 col-sm-12 pb-5 pb-sm-0">
                         <figure>
-                            <img src="https://byem.bodoland.gov.in/images/logo.png" alt=""
-                                class="img-fluid wow zoomIn"
-                                style="visibility: hidden; animation-name: none; height:100px">
+                            <img src="https://byem.bodoland.gov.in/images/logo.png" alt="" class="img-fluid"
+                                style="height:100px">
                         </figure>
                         <div class="phnum">
-                            <p class="wow fadeInUp  mt-5" style="visibility: hidden; animation-name: none;">BTR
+                            <p class="mt-5">BTR
                                 Library Department</p>
                         </div>
                     </div>
@@ -274,8 +273,7 @@
                             </div>
 
                             <div class="col-lg-4 col-12 px-xl-5 mt-4">
-                                <div class="online-voter-service p-4 wow zoomIn"
-                                    style="visibility: hidden; animation-name: none;">
+                                <div class="online-voter-service p-4">
                                     <div class="f-newsletter list-unstyled">
                                         <h5>Contact Us</h5>
                                         <p>Dimalgaon, Titaguri, Dist.- Kokrajhar, Assam-783370 <br><i
