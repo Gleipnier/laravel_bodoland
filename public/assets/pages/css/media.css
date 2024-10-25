@@ -118,7 +118,7 @@ ul.ch_cir_l>li {
     }
 
 
-    .menubar {
+    .menubar2 {
         width: 28px;
         height: 20px;
         position: relative;
@@ -132,12 +132,12 @@ ul.ch_cir_l>li {
         z-index: 5
     }
 
-    .menubar span {
+    .menubar2 span {
         display: block;
         position: absolute;
         height: 3px;
         width: 100%;
-        background: #fff;
+        background: #db5903;
         border-radius: 9px;
         opacity: 1;
         left: 0;
@@ -149,38 +149,38 @@ ul.ch_cir_l>li {
         transition: .25s ease-in-out
     }
 
-    .menubar span:nth-child(1) {
+    .menubar2 span:nth-child(1) {
         top: 0
     }
 
-    .menubar span:nth-child(2) {
+    .menubar2 span:nth-child(2) {
         top: 9px
     }
 
-    .menubar span:nth-child(3) {
+    .menubar2 span:nth-child(3) {
         top: 18px
     }
 
-    .menubar.open span:nth-child(1) {
+    .menubar2.open span:nth-child(1) {
         top: 12px;
         -webkit-transform: rotate(135deg);
         -ms-transform: rotate(135deg);
         transform: rotate(135deg);
-        background: #fff
+        background: #db5903
     }
 
-    .menubar.open span:nth-child(2) {
+    .menubar2.open span:nth-child(2) {
         opacity: 0;
         left: -60px;
-        background: #fff
+        background: #db5903
     }
 
-    .menubar.open span:nth-child(3) {
+    .menubar2.open span:nth-child(3) {
         top: 12px;
         -webkit-transform: rotate(-135deg);
         -ms-transform: rotate(-135deg);
         transform: rotate(-135deg);
-        background: #fff
+        background: #db5903
     }
 
     .logo-menu nav {

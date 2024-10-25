@@ -201,6 +201,9 @@
     <script src="./assets/pages/js/jquery.counterup.js"></script>
     <script src="./assets/pages/js/marquee.js"></script>
 
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/5.3.0/css/bootstrap.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+
 
 </head>
 
@@ -320,6 +323,7 @@
         var navList = document.querySelector('.nav-list-local');
         navList.classList.toggle('active');
     });
+    
 </script>
 
 </html>

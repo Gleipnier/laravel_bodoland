@@ -34,6 +34,60 @@
             </ul>
         </div>
 
+
+        <nav id="primaryNav" class="menu-toggle">
+            <ul class="primary-menu-links d-xl-flex align-items-center">
+                <li class="{{ Request::is('/') ? 'current' : '' }}">
+                    <a href="{{ route('newHome') }}">Home</a>
+                </li>
+
+                <li class="{{ Request::is('aboutus') ? 'current' : '' }}">
+                    <a href="{{ route('aboutus') }}">About Us</a>
+                </li>
+
+                <li class="{{ Request::is('books') ? 'current' : '' }}">
+                    <a href="{{ route('books') }}">Books</a>
+                </li>
+
+                <li class="{{ Request::is('notifications') ? 'current' : '' }}">
+                    <a href="{{ route('allnotifications') }}">Notifications</a>
+                </li>
+
+                <li class="{{ Request::is('bookCollection') ? 'current' : '' }}">
+                    <a href="{{ route('bookCollection') }}">Book Collection</a>
+                </li>
+
+                <li class="{{ Request::is('library') ? 'current' : '' }}">
+                    <a href="{{ route('library') }}">Library</a>
+                </li>
+
+                <li class="{{ Request::is('donation*') ? 'current' : '' }}">
+                    <a href="{{ route('donation') }}">Volunteer
+                    </a>
+                </li>
+
+
+                <li class="{{ Request::is('bookstaff*') ? 'current' : '' }}">
+                    <a href="{{ route('bookstaff') }}">
+                        Who's Who
+                    </a>
+                </li>
+                <li class="{{ Request::is('gallery') ? 'current' : '' }}">
+                    <a href="{{ route('gallery') }}">Gallery</a>
+                </li>
+
+                <li class="{{ Request::is('book-services*') ? 'current' : '' }}">
+                    <a href="{{ route('book-services') }}">Services</a>
+                </li>
+
+                <li class="{{ Request::is('events-news*') ? 'current' : '' }}">
+                    <a href="{{ route('events-news') }}">Events
+                        & News</a>
+                </li>                                    
+            </ul>                           
+        </nav>
+
+
     </div>
 </div>
 
@@ -46,7 +100,14 @@
                     alt="Logo">
             </a>
         </div>
-        <button id="menu-toggle" class="menu-toggle">☰</button>
+       
+
+        <div onclick="this.classList.toggle('open'); document.getElementsByClassName('menu-overlay')[0].classList.toggle('active'); document.getElementById('primaryNav').classList.toggle('open');"  class="menubar2 d-xl-none">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+
         <ul class="nav-list-local">
             <li class="{{ Request::is('/') ? 'current' : '' }}">
                 <a href="{{ route('newHome') }}">Home</a>
@@ -98,3 +159,8 @@
         </ul>
     </div>
 </nav>
+
+
+
+<div class="menu-overlay active" onclick="document.getElementsByClassName('menubar2')[0].classList.remove('open'); document.getElementsByClassName('menu-overlay')[0].classList.remove('active'); document.getElementById('primaryNav').classList.remove('open');">
+</div>
