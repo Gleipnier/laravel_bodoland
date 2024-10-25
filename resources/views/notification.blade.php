@@ -8,7 +8,7 @@
     <section class="sep_blk_t bread-crumb">
         <div class="container">
 
-            <h1 class="fz42 text-center fw800">Notifications View</h1>
+            <h1 class="fz42 text-center fw800">Notifications</h1>
 
         </div>
 

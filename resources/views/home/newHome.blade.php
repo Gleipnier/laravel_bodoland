@@ -201,9 +201,6 @@
                                             src="{{ $gallery->gallery_image_url }}"
                                             alt="{{ $gallery->gallery_image_title }}">
                                     </div>
-                                    <figcaption class="fz22 fw-bold color-333333 mb-4 mt-5">
-                                        {{ $gallery->gallery_image_title }}
-                                    </figcaption>
                                 </figure>
                             </div>
                         @endforeach
