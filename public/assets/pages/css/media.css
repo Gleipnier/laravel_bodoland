@@ -80,6 +80,10 @@ ul.ch_cir_l>li {
         line-height: unset;
     }
 
+    .primary-menu-links li a:hover {
+        color: #1e1e1e;
+    }
+
     .header-top-strip nav {
         position: fixed;
         max-width: 300px;
