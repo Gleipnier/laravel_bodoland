@@ -1,7 +1,5 @@
 @extends('layouts.bookapp')
 
-@extends('layouts.bookcss')
-
 @section('title', 'Book Collection')
 
 @section('content')
@@ -26,7 +24,7 @@
 
                     <div class="row">
                         <div class="col-sm-12">
-                            <div class="table-responsive">
+                            <div class="table-responsive" style="overflow-x: auto; -webkit-overflow-scrolling: touch;">
 
                                 <table class="table table-bordered">
                                     <thead>

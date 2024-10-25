@@ -98,10 +98,10 @@ $(function () {
     })
 })
 
-document.addEventListener('scroll' , function () {     
-    if(window.scrollY > 100){
-        document.getElementById('header').classList.add('sticky')
-    }else{
-        document.getElementById('header').classList.remove('sticky')
-    }
-})
+// document.addEventListener('scroll' , function () {     
+//     if(window.scrollY > 100){
+//         document.getElementById('header').classList.add('sticky')
+//     }else{
+//         document.getElementById('header').classList.remove('sticky')
+//     }
+// })
