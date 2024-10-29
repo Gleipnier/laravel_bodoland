@@ -81,8 +81,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
-                    <h1 class="main-heading wow fadeInUp" style="visibility: visible; animation-name: fadeInUp;">
-                        ABOUT US </h1>
+                    <h1 class="main-heading wow fadeInUp" style="visibility: visible; animation-name: fadeInUp;">ABOUT US </h1>
 
 
                     <div class="row">
@@ -117,6 +116,56 @@
                                 Registered Club cum Libraries within BTAD, contributing to the overall development of
                                 libraries and access to knowledge in the area.
                             </p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="common-section ">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h1 class="main-heading wow fadeInUp" style="visibility: visible; animation-name: fadeInUp;">WELCOME </h1>
+
+
+                    <div class="row">
+                        <div class="col-sm-3">
+                            <figure class="wow fadeInLeft position-relative videoPlayImg"
+                                style="visibility: visible; animation-name: fadeInLeft;"><img alt=""
+                                    class="img-fluid w-100" style="border-radius: 20px;" src="https://library.bodoland.gov.in/storage/images/whoiswho/JcAdU3wIfZSJATDTKicHwgR8HL13SRsrNuuO4q6G.jpg"></figure>
+                        </div>
+
+                        <div class="col-sm-8 ps-xl-4 mt-4 mt-sm-0">
+                            <h3 class="fz22 fw700 color-blue mb-4 "
+                                style="visibility: visible; ">Message from Dr. Nilut Swargiary, Hon'ble Executive Member of Library Service Department, BTC</h3>
+
+                            <p class="fw500 color-333333 mb-0 "
+                                style="text-align: justify; visibility: visible; ">
+
+                                Welcome to the official website of the Library Service Department, Bodoland Territorial Council. Our libraries are more than mere repositories of books; they are pillars of learning, empowerment, and cultural heritage. We are dedicated to ensuring that every citizen of BTR has access to library resources that fuel their personal and professional growth, fostering an environment where knowledge thrives.
+
+                            </p>
+
+                            <br />
+
+                            <p class="fw500 color-333333 mb-0 "
+                                style="text-align: justify; visibility: visible;">
+
+                                Through this website, we aim to make our library services more accessible and engaging for everyone in BTR. Here, you can explore our vast collection of books, learn about upcoming events, and find resources to support your educational journey. Our vision is to build a vibrant and inclusive knowledge network that connects people with ideas and opportunities, supporting the aspirations of our youth and all community members alike.
+
+                            </p>
+
+                            <p class="fw500 color-333333 mb-0 "
+                                style="text-align: justify; visibility: visible; ">
+
+                                I encourage you to make full use of these resources, and join us in our mission to cultivate a well-read, informed, and culturally rich society in BTR. Together, let’s embrace the power of books for a brighter future.
+
+                            </p>
+
+
                         </div>
                     </div>
                 </div>
